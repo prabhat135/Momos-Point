@@ -144,9 +144,9 @@
     /* padding: 40px 0; */
     background-color: #F3EDE1;
     color: #333F72;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* .menu-header { 
@@ -252,8 +252,8 @@
     background-color: #F3EDE1;
     color: #333F72;
     /* display: flex; */
-    flex-direction: column;
-    height: 100vh;
+    /* flex-direction: column; */
+    /* height: 100vh; */
 }
 
 .reviews-desc {
@@ -337,7 +337,7 @@
     color: #333F72;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* height: 100vh; */
 }
 

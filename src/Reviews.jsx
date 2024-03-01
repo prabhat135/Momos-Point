@@ -35,13 +35,13 @@ const Reviews = () => {
   const currentReviewData = reviewsData[currentReview];
 
   return (
-<div id="reviews" className='reviews md:p-32 p-4 lg:block hidden'>
+<div id="reviews" className='reviews md:p-32 p-4 md:block hidden'>
   <div className='reviews-header text-center md:text-left text-xl md:text-2xl lg:text-4xl'>
     <p>WHAT THEY SAY</p>
     <h2>What Our Customers Say<br /> About Us</h2>
   </div>
 
-  <div className='reviews-desc flex-col lg:flex-row items-center mt-10'>
+  <div className='reviews-desc flex-col lg:flex-row items-center mt-10 gap-6'>
     {/* <div className='review-btn'> */}
 <div className='w-3/4'>
   <div className='flex gap-6'>

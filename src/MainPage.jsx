@@ -131,9 +131,7 @@ const MainPage = () => {
       </div>
 
       {/* Reviews section */}
-      <div>
         <Reviews />
-      </div>
       {/* <div id="reviews" className='reviews'>
         <div className='reviews-header'>
           <p>WHAT THEY SAY</p>
