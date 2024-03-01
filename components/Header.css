@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+
+header img {
+    /* max-width: 80px; */
+    /* max-height: 140px;
+    margin-left: 100px; */
+    height: auto;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    margin-top: 10px;
+}
+
+header a {
+    font-size: 20px;
+    /* color: white; */
+    text-decoration: none;
+    margin: 0 40px;
+}
+
+nav .contact-button {
+    padding: 8px 16px;
+    background-color: #FF7033;
+    color: white;
+    border: none;
+    border-radius: 20px 0 20px 0;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+/* Add margin to create space between links */
+nav a:not(:last-child) {
+    margin-right: 10px;
+}
