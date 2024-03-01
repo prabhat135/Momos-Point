@@ -95,23 +95,23 @@ const MainPage = () => {
           <div className="menu-category-container  flex flex-row md:flex-col overflow-auto gap-10 md:gap-4 mr-10">
             <div className="menu-category flex gap-6 p-4 ">
               <img src="./images/shrimp.png" alt="Mediterranean Icon" />
-              <h3 className="">Mediterranean</h3>
+              <h3 className="text-lg md:text-xl lg:text-2xl">Mediterranean</h3>
             </div>
             <div className="menu-category flex gap-6 p-4 ">
               <img src="./images/italian.png" alt="Italian Icon" />
-              <h3>Italian</h3>
+              <h3 className="text-lg md:text-xl lg:text-2xl">Italian</h3>
             </div>
             <div className="menu-category flex gap-6 p-4">
               <img src="./images/fish.png" alt="Thai Icon" />
-              <h3>Thai</h3>
+              <h3 className="text-lg md:text-xl lg:text-2xl">Thai</h3>
             </div>
             <div className="menu-category flex gap-6 p-4">
               <img src="./images/sushi.png" alt="Chinese Icon" />
-              <h3>Chinese</h3>
+              <h3 className="text-lg md:text-xl lg:text-2xl">Chinese</h3>
             </div>
             <div className="menu-category flex gap-6 p-4">
               <img src="./images/burger.png" alt="Continental Icon" />
-              <h3>Continental</h3>
+              <h3 className="text-lg md:text-xl lg:text-2xl">Continental</h3>
             </div>
           </div>
 
@@ -162,7 +162,7 @@ const MainPage = () => {
       {/* Blog section */}
       <div id="blog" className="blog md:p-32 p-6">
         <div className="blogs">
-          <h2>Blogs</h2>
+          <h2 className="text-xl md:text-2xl lg:text-4xl">Blogs</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
             {/* Blog Card 1 */}

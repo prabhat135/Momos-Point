@@ -51,7 +51,7 @@ const Reviews = () => {
       </span>
     </button>
   
-    <div className='reviews-card overflow-hidden md:mx-0 w-2/4'>
+    <div className='reviews-card overflow-hidden md:mx-0 w-[400px] h-[700px]'>
       <img src='./images/commas.png' alt='inverted commas' />
       <p className='p-12'>{currentReviewData.content}</p>
       <img src='./images/review_author.png' alt='review author' />

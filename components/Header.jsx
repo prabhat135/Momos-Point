@@ -29,7 +29,7 @@ const Header = () => {
     <header id='header' className=''>
       <div className='logo'>
   
-        <img src={'/images/logo.png'} height={100} width={100} alt="Momos Point Logo" />
+        <img src={'/images/logo.png'} className='w-10 h-10 lg:h-[80px] lg:w-[80px] md:h-20 md:w-20' alt="Momos Point Logo" />
       </div>
       {
         open ? (
