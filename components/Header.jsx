@@ -43,7 +43,7 @@ const Header = () => {
       <Link to="/">Home</Link>
       <Link to="/#about">About Us</Link>
       <Link to="/#reviews">Reviews</Link>
-      <Link to="/#blog">Blog</Link>
+      <Link className='mr-12' to="/#blog">Blog</Link>
       <button onClick={() => setContactOpen(true)} className="contact-button">CONTACT US</button>
     </nav>
 </div>

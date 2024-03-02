@@ -37,7 +37,7 @@ const MainPage = () => {
       </div>
 
       {/* About section */}
-      <div id="about" className="about md:p-32 p-6 ">
+      <div id="about" className="about md:p-32 p-6 mt-[130px] lg:mt-[160px] md:mt-[120px] sm:mt-[150px] ">
         <div className="aboutus flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 text-center items-center justify-center">
             <img className="w-3/4" src="./images/aboutus.png" alt="About Us" />
@@ -117,12 +117,12 @@ const MainPage = () => {
 
           <div className="menu-images flex gap-8 overflow-hidden mt-8 md:mt-0">
             <img
-              className="w-full sm:w-3/2 md:w-2/4 lg:w-3/4 xl:w-2/6"
+              className="w-full sm:w-3/2 md:w-2/4 lg:w-3/4 xl:w-1/2"
               src="./images/pizza1.png"
               alt="Pizza1"
             />
             <img
-              className="w-full sm:w-3/2 md:w-2/4 lg:w-3/4 xl:w-2/6"
+              className="w-full sm:w-3/2 md:w-2/4 lg:w-3/4 xl:w-1/2"
               src="./images/pizza2.png"
               alt="Pizza2"
             />
@@ -158,28 +158,28 @@ const MainPage = () => {
       </div> */}
 
       {/* Blog section */}
-      <div id="blog" className="blog md:p-32 p-6">
-        <div className="blogs">
-          <h2 className="text-xl md:text-2xl lg:text-4xl">Blogs</h2>
+      <div className=" md:p-32 p-6">
+  <div className="blogs">
+    <h2 className="text-xl md:text-2xl lg:text-4xl text-center mb-4">Blogs</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
-            {/* Blog Card 1 */}
-            <div className="blog-card">
-              <img src="./images/blog_card.png" alt="Blog 1" />
-            </div>
-
-            {/* Blog Card 2 */}
-            <div className="blog-card">
-              <img src="./images/blog_card2.png" alt="Blog 2" />
-            </div>
-
-            {/* Blog Card 3 */}
-            <div className="blog-card">
-              <img src="./images/blog_card3.png" alt="Blog 3" />
-            </div>
-          </div>
-        </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-12 justify-center items-center">
+      {/* Blog Card 1 */}
+      <div className="blog-card">
+        <img src="./images/blog_card.png" alt="Blog 1" />
       </div>
+
+      {/* Blog Card 2 */}
+      <div className="blog-card">
+        <img src="./images/blog_card2.png" alt="Blog 2" />
+      </div>
+
+      {/* Blog Card 3 */}
+      <div className="blog-card">
+        <img src="./images/blog_card3.png" alt="Blog 3" />
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* Footer section */}
       <div id="footer" className="footer">
@@ -187,41 +187,39 @@ const MainPage = () => {
           {/* Image of the map */}
           <h2 className="text-xl md:text-2xl lg:text-4xl">Visit Us Today</h2>
           {/* <img className='mx-auto md:mx-0' src='./images/map.png' alt='Map' /> */}
-          <div className="grid md:grid-cols-2 grid-cols-1 w-1/2">
-            <div className="bg-[#333F72] p-12">
-              <h1 className="text-4xl my-4">
-                Address
-               
-              </h1>
-              <span className="text-lg">Momos Point</span>
-             <hr className="mt-20 opacity-0" />
-              <span className="">
-              47 UA, Block UA, Jawahar Nagar, Kamla Nagar, New Delhi, Delhi, 110007
-              </span>
-              <hr className="mt-20 opacity-0" />
-              <button className="order-button">CONTACT US</button>
-            </div>
+          <div className="flex md:flex-row flex-col w-full mx-auto">
+  <div className="bg-[#333F72] p-12 md:w-1/4 w-full">
+    <h1 className="text-4xl my-4">
+      Address
+    </h1>
+    <span className="text-lg">Momos Point</span>
+    <hr className="mt-20 opacity-0" />
+    <span className="">
+      47 UA, Block UA, Jawahar Nagar, Kamla Nagar, New Delhi, Delhi, 110007
+    </span>
+    <hr className="mt-20 opacity-0" />
+    <button className="order-button">CONTACT US</button>
+  </div>
 
-            <div className="google-map-code
+  <div className="google-map-code w-full  lg:w-[1200px] md:w-full">
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1750.1695838677174!2d77.2074007201103!3d28.679499217588642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%2047%20UA%2C%20Block%20UA%2C%20Jawahar%20Nagar%2C%20Kamla%20Nagar%2C%20New%20Delhi%2C%20Delhi%2C%20110007!5e0!3m2!1sen!2sin!4v1709286543013!5m2!1sen!2sin"
+  frameBorder="0"
+  className="w-full h-full"
+  style={{ border: 0 }}
+  allowfullscreen=""
+  aria-hidden="false"
+  tabIndex="0"
+/>
+  </div>
+</div>
+</div>
 
-            ">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1750.1695838677174!2d77.2074007201103!3d28.679499217588642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%2047%20UA%2C%20Block%20UA%2C%20Jawahar%20Nagar%2C%20Kamla%20Nagar%2C%20New%20Delhi%2C%20Delhi%2C%20110007!5e0!3m2!1sen!2sin!4v1709286543013!5m2!1sen!2sin"
-                frameBorder="0"
-                className="lg:w-[1000px] md:w-[300px] h-[400px] md:h[200px] mx-auto md:mx-0"
-                style={{ border: 0 }}
-                allowfullscreen=""
-                aria-hidden="false"
-                tabIndex="0"
-              />
-            </div>
-          </div>
-        </div>
         <div className="footer-content flex flex-col md:flex-row md:p-24 p-6">
-          <div className="footer-logo text-center md:text-left">
+          <div className="footer-logo text-center md:text-left items-center justify-center" >
             {/* Logo */}
             <img
-              className="mx-auto md:mx-0"
+              className="mx-auto md:mx-0 items-center justify-center text-center"
               height={100}
               width={100}
               src="./images/logo.png"

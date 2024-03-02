@@ -3,7 +3,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background: url("/images/bg.png") no-repeat; */
+  background-color: #F3EDE1
 }
 
 .content {

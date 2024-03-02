@@ -14,15 +14,15 @@ import './MainPage.css';
 const App = () => {
   return (
     <Router>
-      <img src={'/images/bg.png'} className='
-      absolute
-      top-0
-      left-0
-      w-full
-      h-full
-      z-[-1]
-      object-cover
-      ' alt="Momos Point background" />
+<img src={'/images/bg.png'} className='
+  absolute
+  top-0
+  left-0
+  w-full
+  min-h-screen
+  z-[-1]
+  object-cover
+' alt="Momos Point background" />
       <Header />
   
       <Routes>
