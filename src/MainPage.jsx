@@ -92,7 +92,7 @@ const MainPage = () => {
         </div>
 
         <div className="menu-categories  mt-12 justify-between md:flex ">
-          <div className="menu-category-container  flex flex-row md:flex-col overflow-auto gap-10 md:gap-4 mr-10">
+          <div className="menu-category-container  flex flex-row md:flex-col overflow-auto gap-10 md:gap-10 mr-10">
             <div className="menu-category flex gap-6 p-4 ">
               <img src="./images/shrimp.png" alt="Mediterranean Icon" />
               <h3 className="text-lg md:text-xl lg:text-2xl">Mediterranean</h3>
@@ -160,7 +160,7 @@ const MainPage = () => {
       {/* Blog section */}
       <div className=" md:p-32 p-6">
   <div className="blogs">
-    <h2 className="text-xl md:text-2xl lg:text-4xl text-center mb-4">Blogs</h2>
+    <h2 className="text-xl md:text-2xl lg:text-4xl text-center mb-4 text-[#333F72]">Blogs</h2>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-12 justify-center items-center">
       {/* Blog Card 1 */}
@@ -185,7 +185,7 @@ const MainPage = () => {
       <div id="footer" className="footer">
         <div className="map text-center md:text-left md:p-32 mx-auto items-center justify-center p-6">
           {/* Image of the map */}
-          <h2 className="text-xl md:text-2xl lg:text-4xl">Visit Us Today</h2>
+          <h2 className="text-xl md:text-2xl lg:text-4xl text-[#333F72]">Visit Us Today</h2>
           {/* <img className='mx-auto md:mx-0' src='./images/map.png' alt='Map' /> */}
           <div className="flex md:flex-row flex-col w-full mx-auto">
   <div className="bg-[#333F72] p-12 md:w-1/4 w-full">
