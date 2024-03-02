@@ -26,75 +26,80 @@ const ContactForm = ({ onClose }) => {
     };
 
     return (
-        <>
     <Dialog
-      open={isOpen}
-      onClose={() => setIsOpen(false)}
-      className="relative z-50 w-1/2">
+  open={isOpen}
+  onClose={() => setIsOpen(false)}
+  className="relative z-50 w-full sm:w-3/4 md:w-1/2 mx-auto">
 
-      <Dialog.Panel className="w-full max-w-sm rounded bg-white">
-          <Dialog.Title>Complete your order</Dialog.Title>
+  <Dialog.Panel className="w-full max-w-sm mx-auto rounded bg-white p-4 sm:p-6 md:p-8">
+      <Dialog.Title className="text-lg sm:text-xl md:text-2xl">Complete your order</Dialog.Title>
 
-          <div className="contact-form-modal">
-            <span className="close-arrow" onClick={onClose}>&times;</span>
-            <form onSubmit={handleSubmit}>
-                <h2>Reach to Us</h2>
-                <div className='contact-form-field'>
-                    <label htmlFor="name"></label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Full Name"
-                        required
-                    />
-                </div>
-                <div className='contact-form-field'>
-                    <label htmlFor="email"></label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="Email"
-                        required
-                    />
-                </div>
-                <div className='contact-form-field'>
-                    <label htmlFor="phone"></label>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="Phone No"
-                        required
-                    />
-                </div>
-                <div className='contact-form-field'>
-                    <label htmlFor="query"></label>
-                    <textarea
-                        id="query"
-                        name="query"
-                        value={formData.query}
-                        onChange={handleChange}
-                        placeholder="Query"
-                        required
-                    />
-                </div>
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+      <div className="contact-form-modal">
+        <div className="flex-row justify-between text-end pr-4">
+
+        <h4 className="close-arrow text-2xl sm:text-4xl md:text-6xl" onClick={onClose}>&times;</h4>
         </div>
-        </Dialog.Panel>
-    </Dialog>
+        <form onSubmit={handleSubmit}>
+            <h4 className="text-lg sm:text-xl md:text-4xl pl-4">Reach to Us</h4>
+            <div className='p-2 sm:p-4 md:p-6'>
+                <label htmlFor="name"></label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Full Name"
+                    required
+                    className="w-full"
+                />
+            </div>
+            <div className='p-2 sm:p-4 md:p-6'>
+                <label htmlFor="email"></label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Email"
+                    required
+                    className="w-full"
+                />
+            </div>
+            <div className='p-2 sm:p-4 md:p-6'>
+                <label htmlFor="phone"></label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="Phone No"
+                    required
+                    className="w-full"
+                />
+            </div>
+            <div className='p-2 sm:p-4 md:p-6'>
+                <label htmlFor="query"></label>
+                <textarea
+                    id="query"
+                    name="query"
+                    value={formData.query}
+                    onChange={handleChange}
+                    placeholder="Query"
+                    required
+                    className="w-full"
+                />
+            </div>
+            <div className="p-2 sm:p-4 md:p-6 justify-center items-center mx-auto text-center">
+                <button type="submit" className="md:w-1/4 w-full">Submit</button>
+            </div>
+        </form>
+    </div>
+    </Dialog.Panel>
+</Dialog>
         
-        </>
        
     );
 };

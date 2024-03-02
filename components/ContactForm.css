@@ -17,32 +17,33 @@
 
 
 .contact-form-modal .close-arrow {
-    position: absolute;
-    top: 20px;
+    /* position: absolute; */
+    /* top: 20px; */
     right: 75px;
     cursor: pointer;
-    font-size: 70px;
+    /* font-size: 70px; */
     font-weight: 200;
     color: #fff;
+    /* text-align: right; */
 }
 
 
 
 .contact-form-modal form {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
-.contact-form-modal h2 {
-    margin-bottom: 20px;
+.contact-form-modal h4 {
+    /* margin-bottom: 20px; */
     font-family: 'Protest revolution';
     font-weight: 500;
-    font-size: 50px;
+    /* font-size: 50px; */
     line-height: 115%;
     letter-spacing: -1px;
     text-decoration: none;
-    margin: 50px 0px 0px 200px;
-    text-align: left;
+    /* margin: 50px 0px 0px 200px; */
+    /* text-align: left; */
 }
 
 .contact-form-modal label {
@@ -53,16 +54,16 @@
 .contact-form-modal input,
 .contact-form-modal textarea {
     padding: 10px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
     color-scheme: #fff;
-    width: 70%;
+    /* width: 70%; */
 }
 
 .contact-form-modal textarea {
-    width: 70%;
+    /* width: 70%; */
     height: 110px;
     resize: none;
 }
@@ -78,16 +79,16 @@
     color: #333F72;
     border: none;
     cursor: pointer;
-    margin: 40px 0px 0px 43%;
+    /* margin: 40px 0px 0px 43%; */
     padding: 10px 35px;
     font-size: 22px;
     border-radius: 17px 0 17px 0;
     align-items: center;
 }
 
-.contact-form-field {
+/* .contact-form-field {
     margin: 35px 0px 0px 200px;
-}
+} */
 
 
 ::placeholder {
