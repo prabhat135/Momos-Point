@@ -4,14 +4,13 @@ import React, { useState } from 'react';
 import './ContactForm.css';
 import { Dialog } from '@headlessui/react';
 
-const ContactForm = ({ onClose }) => {
+const ContactForm = ({ setIsOpen, isOpen }) => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         phone: '',
         query: '',
     });
-    let [isOpen, setIsOpen] = useState(true)
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -22,7 +21,7 @@ const ContactForm = ({ onClose }) => {
         // Add logic for form submission here
         console.log('Form submitted:', formData);
         // Close the form or perform any other necessary actions
-        onClose();
+        setIsOpen(false)
     };
 
     return (
@@ -37,7 +36,7 @@ const ContactForm = ({ onClose }) => {
       <div className="contact-form-modal">
         <div className="flex-row justify-between text-end pr-4">
 
-        <h4 className="close-arrow text-2xl sm:text-4xl md:text-6xl" onClick={onClose}>&times;</h4>
+        <h4 className="close-arrow text-2xl sm:text-4xl md:text-6xl" onClick={() => setIsOpen(false)}>&times;</h4>
         </div>
         <form onSubmit={handleSubmit}>
             <h4 className="text-lg sm:text-xl md:text-4xl pl-4">Reach to Us</h4>

@@ -6,8 +6,8 @@ import ContactForm from './ContactForm';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [contactOpen, setContactOpen] = useState(false);
- console.log(contactOpen)
+  let [isOpen, setIsOpen] = useState(true)
+
   useEffect(() => {
     let header = document.getElementById("header");
     window.addEventListener("scroll", () => {
@@ -44,7 +44,7 @@ const Header = () => {
       <Link to="/#about">About Us</Link>
       <Link to="/#reviews">Reviews</Link>
       <Link className='mr-12' to="/#blog">Blog</Link>
-      <button onClick={() => setContactOpen(true)} className="contact-button">CONTACT US</button>
+      <button onClick={() => setIsOpen(true)} className="contact-button">CONTACT US</button>
     </nav>
 </div>
 
@@ -60,12 +60,12 @@ const Header = () => {
       <Link to="/#about">About Us</Link>
       <Link to="/#reviews">Reviews</Link>
       <Link to="/#blog">Blog</Link>
-      <button onClick={() => setContactOpen(true)} className="contact-button">CONTACT US</button>
+      <button onClick={() => setIsOpen(true)} className="contact-button">CONTACT US</button>
     </nav>
       </>
    )
       }
-      {contactOpen && <ContactForm onClose={() => setContactOpen(false)} />}
+      {isOpen && <ContactForm setIsOpen={setIsOpen} isOpen={isOpen} />}
     </header>
   );
 };
