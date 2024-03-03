@@ -6,7 +6,7 @@ import ContactForm from "../components/ContactForm";
 
 
 const MainPage = () => {
-  const [contactOpen, setContactOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(false)
 
   return (
     <div>
@@ -201,7 +201,7 @@ const MainPage = () => {
                 47 UA, Block UA, Jawahar Nagar, Kamla Nagar, New Delhi, Delhi, 110007
               </span>
               <hr className="mt-20 opacity-0" />
-              <button onClick={() => setContactOpen(true)} className="order-button">CONTACT US</button>
+              <button onClick={() => setIsOpen(true)} className="order-button">CONTACT US</button>
             </div>
 
             <div className="google-map-code w-full  lg:w-[1200px] md:w-full">
@@ -247,7 +247,7 @@ const MainPage = () => {
               <div>
                 <h2>Get In Touch</h2>
                 <p>Question or Feedback?</p>
-                <p>We'd love to hear from you</p>
+                <p>We{`'d`} love to hear from you</p>
               </div>
               {/* Email and social media buttons */}
               <img
@@ -265,7 +265,7 @@ const MainPage = () => {
 
         </div>
       </div>
-      {contactOpen && <ContactForm onClose={() => setContactOpen(false)} />}
+       {isOpen && <ContactForm setIsOpen={setIsOpen} isOpen={isOpen} />}
     </div>
   );
 };

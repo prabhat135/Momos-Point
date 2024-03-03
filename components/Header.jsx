@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import ContactForm from './ContactForm';
 
+
 const Header = () => {
   const [open, setOpen] = useState(false);
-  let [isOpen, setIsOpen] = useState(true)
+  let [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     let header = document.getElementById("header");
