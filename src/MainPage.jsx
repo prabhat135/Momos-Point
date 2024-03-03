@@ -1,10 +1,13 @@
 // MainPage.js
-import React from "react";
-// import { Link } from 'react-router-dom';
+import React, { useState} from "react";
 import "./MainPage.css";
 import Reviews from "./Reviews";
+import ContactForm from "../components/ContactForm";
+
 
 const MainPage = () => {
+  const [contactOpen, setContactOpen] = useState(false);
+
   return (
     <div>
       {/* Home section */}
@@ -131,7 +134,7 @@ const MainPage = () => {
       </div>
 
       {/* Reviews section */}
-        <Reviews />
+      <Reviews />
       {/* <div id="reviews" className='reviews'>
         <div className='reviews-header'>
           <p>WHAT THEY SAY</p>
@@ -159,27 +162,27 @@ const MainPage = () => {
 
       {/* Blog section */}
       <div className=" md:p-32 p-6">
-  <div className="blogs">
-    <h2 className="text-xl md:text-2xl lg:text-4xl text-center mb-4 text-[#333F72]">Blogs</h2>
+        <div className="blogs">
+          <h2 className="text-xl md:text-2xl lg:text-4xl text-center mb-4 text-[#333F72]">Blogs</h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-12 justify-center items-center">
-      {/* Blog Card 1 */}
-      <div className="blog-card">
-        <img src="./images/blog_card.png" alt="Blog 1" />
-      </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-12 justify-center items-center">
+            {/* Blog Card 1 */}
+            <div className="blog-card">
+              <img src="./images/blog_card.png" alt="Blog 1" />
+            </div>
 
-      {/* Blog Card 2 */}
-      <div className="blog-card">
-        <img src="./images/blog_card2.png" alt="Blog 2" />
-      </div>
+            {/* Blog Card 2 */}
+            <div className="blog-card">
+              <img src="./images/blog_card2.png" alt="Blog 2" />
+            </div>
 
-      {/* Blog Card 3 */}
-      <div className="blog-card">
-        <img src="./images/blog_card3.png" alt="Blog 3" />
+            {/* Blog Card 3 */}
+            <div className="blog-card">
+              <img src="./images/blog_card3.png" alt="Blog 3" />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
       {/* Footer section */}
       <div id="footer" className="footer">
@@ -188,32 +191,32 @@ const MainPage = () => {
           <h2 className="text-xl md:text-2xl lg:text-4xl text-[#333F72]">Visit Us Today</h2>
           {/* <img className='mx-auto md:mx-0' src='./images/map.png' alt='Map' /> */}
           <div className="flex md:flex-row flex-col w-full mx-auto">
-  <div className="bg-[#333F72] p-12 md:w-1/4 w-full">
-    <h1 className="text-4xl my-4">
-      Address
-    </h1>
-    <span className="text-lg">Momos Point</span>
-    <hr className="mt-20 opacity-0" />
-    <span className="">
-      47 UA, Block UA, Jawahar Nagar, Kamla Nagar, New Delhi, Delhi, 110007
-    </span>
-    <hr className="mt-20 opacity-0" />
-    <button className="order-button">CONTACT US</button>
-  </div>
+            <div className="bg-[#333F72] p-12 md:w-1/4 w-full">
+              <h1 className="text-4xl my-4">
+                Address
+              </h1>
+              <span className="text-lg">Momos Point</span>
+              <hr className="mt-20 opacity-0" />
+              <span className="">
+                47 UA, Block UA, Jawahar Nagar, Kamla Nagar, New Delhi, Delhi, 110007
+              </span>
+              <hr className="mt-20 opacity-0" />
+              <button onClick={() => setContactOpen(true)} className="order-button">CONTACT US</button>
+            </div>
 
-  <div className="google-map-code w-full  lg:w-[1200px] md:w-full">
-  <iframe
-  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1750.1695838677174!2d77.2074007201103!3d28.679499217588642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%2047%20UA%2C%20Block%20UA%2C%20Jawahar%20Nagar%2C%20Kamla%20Nagar%2C%20New%20Delhi%2C%20Delhi%2C%20110007!5e0!3m2!1sen!2sin!4v1709286543013!5m2!1sen!2sin"
-  frameBorder="0"
-  className="w-full h-full"
-  style={{ border: 0 }}
-  allowfullscreen=""
-  aria-hidden="false"
-  tabIndex="0"
-/>
-  </div>
-</div>
-</div>
+            <div className="google-map-code w-full  lg:w-[1200px] md:w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1750.1695838677174!2d77.2074007201103!3d28.679499217588642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%2047%20UA%2C%20Block%20UA%2C%20Jawahar%20Nagar%2C%20Kamla%20Nagar%2C%20New%20Delhi%2C%20Delhi%2C%20110007!5e0!3m2!1sen!2sin!4v1709286543013!5m2!1sen!2sin"
+                frameBorder="0"
+                className="w-full h-full"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                aria-hidden="false"
+                tabIndex="0"
+              />
+            </div>
+          </div>
+        </div>
 
         <div className="footer-content flex flex-col md:flex-row md:p-24 p-6">
           <div className="footer-logo text-center md:text-left items-center justify-center" >
@@ -259,10 +262,10 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          {/* <hr />
-    <p className="footer-text">All Rights Reserved Momos Point @2024</p> */}
+
         </div>
       </div>
+      {contactOpen && <ContactForm onClose={() => setContactOpen(false)} />}
     </div>
   );
 };

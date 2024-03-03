@@ -373,8 +373,14 @@
     background-color: #F3EDE1;
 }
 
-.map {
-    /* width: 50%; */
+.footer .order-button {
+    padding: 8px 16px;
+    background-color: #FF7033;
+    color: white;
+    border: none;
+    border-radius: 15px 0 15px 0;
+    cursor: pointer;
+    margin-top: -10px;
 }
 
 .map img {
