@@ -13,7 +13,7 @@ const MainPage = () => {
       {/* Home section */}
       <div
         id="home"
-        className="home flex flex-col items-center justify-center text-center min-h-screen"
+        className="home flex flex-col items-center justify-center text-center min-h-[800px]"
       >
         <div className="home_content">
           <h1 className="text-2xl md:text-4xl lg:text-7xl">
@@ -40,9 +40,9 @@ const MainPage = () => {
       </div>
 
       {/* About section */}
-      <div id="about" className="about md:px-32 p-6 mt-[130px] lg:mt-[160px] md:mt-[120px] sm:mt-[150px] ">
-        <div className="aboutus flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2 text-center items-center justify-center">
+      <div id="about" className="about md:px-32 p-6  ">
+        <div className="aboutus flex flex-col md:flex-row ">
+          <div className="w-full md:w-1/2 text-center items-center justify-center mt-12">
             <img className="w-3/4" src="./images/aboutus.png" alt="About Us" />
           </div>
           <div className="aboutus_content w-full md:w-1/2 p-2 md:p-6 lg:p-12">
