@@ -35,7 +35,7 @@ const Reviews = () => {
   const currentReviewData = reviewsData[currentReview];
 
   return (
-    <div id="reviews" className='reviews md:p-20 p-4 md:block '>
+    <div id="reviews" className='reviews md:px-32 py-20 p-4 md:block '>
       <div className='reviews-header text-center md:text-left'>
         <p>WHAT THEY SAY</p>
         <h2 className='text-2xl md:text-4xl lg:text-6xl'>

@@ -13,7 +13,7 @@ const MainPage = () => {
       {/* Home section */}
       <div
         id="home"
-        className="home flex flex-col items-center justify-center text-center min-h-[800px]"
+        className="home flex flex-col items-center justify-center text-center min-h-[830px]"
       >
         <div className="home_content">
           <h1 className="text-2xl md:text-4xl lg:text-7xl">
@@ -40,7 +40,7 @@ const MainPage = () => {
       </div>
 
       {/* About section */}
-      <div id="about" className="about md:px-32 p-6  ">
+      <div id="about" className="about md:px-32 py-20 p-6  ">
         <div className="aboutus flex flex-col md:flex-row ">
           <div className="w-full md:w-1/2 text-center items-center justify-center mt-12">
             <img className="w-3/4" src="./images/aboutus.png" alt="About Us" />
@@ -76,7 +76,7 @@ const MainPage = () => {
       </div>
 
       {/* Menu section */}
-      <div id="menu" className="menu md:p-20 p-6">
+      <div id="menu" className="menu md:px-32 py-20 p-6">
         <div className="menu-top flex justify-between items-center">
           <div className="menu-header">
             <p>OUR MENU</p>
@@ -139,7 +139,7 @@ const MainPage = () => {
 
 
       {/* Blog section */}
-      <div className=" md:p-20 p-6">
+      <div className=" md:px-32 py-20 p-6">
         <div className="blogs">
           <h2 className="text-xl md:text-3xl lg:text-5xl mb-20 text-[#333F72]">Blogs</h2>
 
@@ -214,7 +214,7 @@ const MainPage = () => {
 
       {/* Footer section */}
       <div id="footer" className="footer">
-        <div className="map text-center md:text-left md:p-20 mx-auto items-center justify-center p-6">
+        <div className="map text-center md:text-left md:px-32 py-20 mx-auto items-center justify-center p-6">
           {/* Image of the map */}
           <h2 className="text-xl md:text-3xl lg:text-5xl text-[#333F72] mb-20">Visit Us Today</h2>
           {/* <img className='mx-auto md:mx-0' src='./images/map.png' alt='Map' /> */}
