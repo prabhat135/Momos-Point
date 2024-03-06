@@ -30,23 +30,23 @@ const MainPage = () => {
 
           <div className="buttons flex flex-col gap-4 md:flex-row">
             <button className="order-button red w-full p-4">
-              Order&nbsp;on&nbsp;Zomato
+              ORDER&nbsp;ON&nbsp;ZOMATO
             </button>
             <button className="order-button orange w-full p-4">
-              Order&nbsp;on&nbsp;Swiggy
+              ORDER&nbsp;ON&nbsp;SWIGGY
             </button>
           </div>
         </div>
       </div>
 
       {/* About section */}
-      <div id="about" className="about md:p-32 p-6 mt-[130px] lg:mt-[160px] md:mt-[120px] sm:mt-[150px] ">
+      <div id="about" className="about md:px-32 p-6 mt-[130px] lg:mt-[160px] md:mt-[120px] sm:mt-[150px] ">
         <div className="aboutus flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 text-center items-center justify-center">
             <img className="w-3/4" src="./images/aboutus.png" alt="About Us" />
           </div>
           <div className="aboutus_content w-full md:w-1/2 p-2 md:p-6 lg:p-12">
-            <h2 className="text-2xl md:text-4xl lg:text-6xl mb-20">About Us</h2>
+            <h2 className="text-xl md:text-3xl lg:text-5xl mb-20">About Us</h2>
             <p className="text-base md:text-lg lg:text-xl">
               This gourmet journey started in nineties at a small shop in
               k.nags. It is sheer patronage of guests like you and blessings
@@ -62,14 +62,14 @@ const MainPage = () => {
         </div>
 
         <div className="featured w-full mt-20">
-          <h2 className="text-2xl md:text-4xl lg:text-6xl text-left mb-20">We Featured On</h2>
+          <h2 className="text-xl md:text-3xl lg:text-5xl text-left mb-20">We Featured On</h2>
           <div className="flex flex-wrap justify-between gap-6">
-            <img className="featured-image" width={150} src="./images/f1.png" alt="Company 1" />
-            <img className="featured-image" width={250} src="./images/f2.png" alt="Company 2" />
-            <img className="featured-image" width={100} src="./images/f3.png" alt="Company 3" />
-            <img className="featured-image" width={250} src="./images/f4.png" alt="Company 4" />
-            <img className="featured-image" width={150} src="./images/f5.png" alt="Company 5" />
-            <img className="featured-image" width={100} src="./images/f6.png" alt="Company 6" />
+            <img className="featured-image" width={150} src="./images/f01.png" alt="Company 1" />
+            <img className="featured-image" width={250} src="./images/f02.png" alt="Company 2" />
+            <img className="featured-image" width={100} src="./images/f03.png" alt="Company 3" />
+            <img className="featured-image" width={250} src="./images/f04.png" alt="Company 4" />
+            <img className="featured-image" width={150} src="./images/f05.png" alt="Company 5" />
+            <img className="featured-image" width={100} src="./images/f06.png" alt="Company 6" />
             {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
           </div>
         </div>
@@ -80,7 +80,7 @@ const MainPage = () => {
         <div className="menu-top flex justify-between items-center">
           <div className="menu-header">
             <p>OUR MENU</p>
-            <h2 className="text-2xl md:text-4xl lg:text-6xl">
+            <h2 className="text-xl md:text-3xl lg:text-5xl">
               Menu That Always <br /> Makes You Fall In Love
             </h2>
           </div>
@@ -133,37 +133,11 @@ const MainPage = () => {
         </div>
       </div>
 
-      {/* Reviews section */}
-      <Reviews />
-      {/* <div id="reviews" className='reviews'>
-        <div className='reviews-header'>
-          <p>WHAT THEY SAY</p>
-          <h2>What Our Customers Say<br /> About Us</h2>
-        </div>
-
-        <div className='reviews-desc'>
-          <button className='change-review-button' onClick={handleChangeReview}>
-            {'<'}
-          </button>
-          <div className='reviews-card'>
-            <img src='./images/commas.png' alt='inverted commas' />
-            <p>{currentReviewData.content}</p>
-            <img src='./images/review_author.png' alt='review author' />
-            <h3>{currentReviewData.author}</h3>
-            <img src='./images/rating.png' alt='5 star rating' />
-            <mg src='./images/google_review.png' alt='Google review' />
-          </div>
-
-          <div className='reviews-image'>
-            <img src='./images/review.png' alt='reviews' />
-          </div>
-        </div>
-      </div> */}
 
       {/* Blog section */}
       <div className=" md:p-32 p-6">
         <div className="blogs">
-          <h2 className="text-2xl md:text-4xl lg:text-6xl mb-20 text-[#333F72]">Blogs</h2>
+          <h2 className="text-xl md:text-3xl lg:text-5xl mb-20 text-[#333F72]">Blogs</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-36 md:gap-12 items-center">
 
@@ -238,7 +212,7 @@ const MainPage = () => {
       <div id="footer" className="footer">
         <div className="map text-center md:text-left md:p-32 mx-auto items-center justify-center p-6">
           {/* Image of the map */}
-          <h2 className="text-2xl md:text-4xl lg:text-6xl text-[#333F72]">Visit Us Today</h2>
+          <h2 className="text-xl md:text-3xl lg:text-5xl text-[#333F72] mb-20">Visit Us Today</h2>
           {/* <img className='mx-auto md:mx-0' src='./images/map.png' alt='Map' /> */}
           <div className="flex md:flex-row flex-col w-full mx-auto">
             <div className="bg-[#333F72] p-12 md:w-1/4 w-full">
@@ -273,8 +247,8 @@ const MainPage = () => {
             {/* Logo */}
             <img
               className="mx-auto md:mx-0 items-center justify-center text-center"
-              height={100}
-              width={100}
+              height={120}
+              width={120}
               src="./images/logo.png"
               alt="Momos Point Logo"
             />
@@ -286,12 +260,12 @@ const MainPage = () => {
           </div>
 
           <div className="footer-links-and-contact flex flex-col md:flex-row lg:gap-28">
-            <div className="footer-links text-center md:text-left my-5 text-base md:text-lg lg:text-xl">
+            <div className="footer-links flex flex-col text-center md:text-left my-5 text-base md:text-lg lg:text-xl">
               {/* Navigation links */}
-              <a href="#home">Home</a>
-              <a href="#about">About Us</a>
-              <a href="#reviews">Our Menu</a>
-              <a href="#menu">Reviews</a>
+              <a href="#home" className="flex-grow text-center md:text-left">Home</a>
+              <a href="#about" className="flex-grow text-center md:text-left">About Us</a>
+              <a href="#menu" className="flex-grow text-center md:text-left">Our Menu</a>
+              <a href="#reviews" className="flex-grow text-center md:text-left">Reviews</a>
             </div>
             <div className="footer-contact text-center md:text-left">
               <div>
