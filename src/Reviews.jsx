@@ -13,7 +13,7 @@ const Reviews = () => {
       reviewImage: "./images/review.png",
     },
     {
-      content: <p>Momos Point gets fewer than 5 stars.<br /> Momos Point is, in my opinion, the greatest Chinese restaurant. Since I was young, my family and I started coming here. The restaurant is called Momos Point, so it goes without saying that the momos will be excellent. Without a question. Everything on this place is amazing, including the momos, noodles, rice...</p>,
+      content: <p>Momos Point gets fewer than 5 stars.<br /> Momos Point is, in my opinion, the greatest Chinese restaurant. Since I was young, my family and I started coming here. The restaurant is called Momos Point, so it goes without saying that the momos will be excellent. Without a question. Everything on this place is amazing and tasty...</p>,
       author: "Marie Johnson",
       rating: 5,
       reviewImage: "./images/review.png",
@@ -35,43 +35,46 @@ const Reviews = () => {
   const currentReviewData = reviewsData[currentReview];
 
   return (
-<div id="reviews" className='reviews md:p-32 p-4 md:block hidden'>
-  <div className='reviews-header text-center md:text-left text-xl md:text-2xl lg:text-4xl'>
-    <p>WHAT THEY SAY</p>
-    <h2>What Our Customers Say<br /> About Us</h2>
-  </div>
+    <div id="reviews" className='reviews md:p-32 p-4 md:block '>
+      <div className='reviews-header text-center md:text-left'>
+        <p>WHAT THEY SAY</p>
+        <h2 className='text-2xl md:text-4xl lg:text-6xl'>
+          What Our Customers Say<br /> About Us
+        </h2>
+      </div>
 
-  <div className='reviews-desc flex-col lg:flex-row items-center mt-10 gap-6'>
-    {/* <div className='review-btn'> */}
-<div className='w-3/4'>
-  <div className='flex gap-6'>
-  <button className='change-review-button hidden md:block h-14 w-14' onClick={handleChangeReview}>
-    <span className='font-bold text-xl'>
-      {'<'}
-      </span>
-    </button>
-  
-    <div className='reviews-card overflow-hidden md:mx-0 w-[400px] h-[700px]'>
-      <img src='./images/commas.png' alt='inverted commas' />
-      <p className='p-12'>{currentReviewData.content}</p>
-      <img src='./images/review_author.png' alt='review author' />
-      <h3>{currentReviewData.author}</h3>
-      <img src='./images/rating.png' alt='5 star rating' />
-      <img src='./images/google_review.png' alt='Google review' />
+      <div className='reviews-desc flex-col lg:flex-row items-center mt-10 gap-6'>
+        {/* <div className='review-btn'> */}
+        <div className='w-3/4'>
+          <div className='flex gap-6'>
+            <button className='change-review-button hidden md:block h-14 w-14' onClick={handleChangeReview}>
+              <span className='font-normal text-2xl'>
+                {'<'}
+              </span>
+            </button>
+
+            <div className='reviews-card overflow-hidden mx-auto md:mx-0 w-full md:w-[450px] md:h-[600px] h-auto'>
+              <img src='./images/commas.png' alt='inverted commas' />
+              <p className='p-06 md:p-12'>{currentReviewData.content}</p>
+              <img src='./images/review_author.png' alt='review author' />
+              <h3>{currentReviewData.author}</h3>
+              <img src='./images/rating.png' alt='5 star rating' />
+              <img src='./images/google_review.png' alt='Google review' />
+            </div>
+
+            <button className='change-review-button hidden md:block h-14 w-14' onClick={handleChangeReview}>
+              <span className='font-normal text-2xl'>
+                {'>'}
+              </span>
+            </button>
+          </div>
+
+        </div>
+        <div className='reviews-image mx-auto md:mx-0'>
+          <img src='./images/review.png' alt='reviews' />
+        </div>
+      </div>
     </div>
-    <button className='change-review-button hidden md:block h-14 w-14' onClick={handleChangeReview}>
-    <span className='font-bold text-xl'>
-      {'>'}
-      </span>
-    </button>
-  </div>
-   
-    </div>
-    <div className='reviews-image mx-auto md:mx-0'>
-      <img src='./images/review.png' alt='reviews' />
-    </div>
-  </div>
-</div>
   );
 };
 

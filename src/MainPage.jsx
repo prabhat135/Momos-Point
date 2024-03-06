@@ -1,5 +1,5 @@
 // MainPage.js
-import React, { useState} from "react";
+import React, { useState } from "react";
 import "./MainPage.css";
 import Reviews from "./Reviews";
 import ContactForm from "../components/ContactForm";
@@ -13,7 +13,7 @@ const MainPage = () => {
       {/* Home section */}
       <div
         id="home"
-        className="home flex flex-col items-center justify-center text-center"
+        className="home flex flex-col items-center justify-center text-center min-h-screen"
       >
         <div className="home_content">
           <h1 className="text-2xl md:text-4xl lg:text-7xl">
@@ -23,8 +23,8 @@ const MainPage = () => {
             Awaits at Momos Point
           </h1>
           <p className="text-base md:text-lg lg:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+            eiusmod tempor incididunt ut labore et dolore magna<br /> aliqua. Ut enim
             ad minim veniam quis.
           </p>
 
@@ -46,8 +46,8 @@ const MainPage = () => {
             <img className="w-3/4" src="./images/aboutus.png" alt="About Us" />
           </div>
           <div className="aboutus_content w-full md:w-1/2 p-2 md:p-6 lg:p-12">
-            <h2 className="text-2xl md:text-4xl lg:text-6xl">About Us</h2>
-            <p>
+            <h2 className="text-2xl md:text-4xl lg:text-6xl mb-20">About Us</h2>
+            <p className="text-base md:text-lg lg:text-xl">
               This gourmet journey started in nineties at a small shop in
               k.nags. It is sheer patronage of guests like you and blessings
               that Momo's point has made a mark in almost all news channels and
@@ -62,14 +62,14 @@ const MainPage = () => {
         </div>
 
         <div className="featured w-full mt-20">
-          <h2 className="text-4xl text-left mb-20">We Featured On</h2>
+          <h2 className="text-2xl md:text-4xl lg:text-6xl text-left mb-20">We Featured On</h2>
           <div className="flex flex-wrap justify-between gap-6">
-            <img width={150} src="./images/f1.png" alt="Company 1" />
-            <img width={250} src="./images/f2.png" alt="Company 2" />
-            <img width={100} src="./images/f3.png" alt="Company 3" />
-            <img width={250} src="./images/f4.png" alt="Company 4" />
-            <img width={150} src="./images/f5.png" alt="Company 5" />
-            <img width={100} src="./images/f6.png" alt="Company 6" />
+            <img className="featured-image" width={150} src="./images/f1.png" alt="Company 1" />
+            <img className="featured-image" width={250} src="./images/f2.png" alt="Company 2" />
+            <img className="featured-image" width={100} src="./images/f3.png" alt="Company 3" />
+            <img className="featured-image" width={250} src="./images/f4.png" alt="Company 4" />
+            <img className="featured-image" width={150} src="./images/f5.png" alt="Company 5" />
+            <img className="featured-image" width={100} src="./images/f6.png" alt="Company 6" />
             {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
           </div>
         </div>
@@ -80,16 +80,16 @@ const MainPage = () => {
         <div className="menu-top flex justify-between items-center">
           <div className="menu-header">
             <p>OUR MENU</p>
-            <h2 className="text-xl md:text-2xl lg:text-4xl">
+            <h2 className="text-2xl md:text-4xl lg:text-6xl">
               Menu That Always <br /> Makes You Fall In Love
             </h2>
           </div>
           <div className="menu-btn flex justify-between gap-4">
             <button className="change-menu-button h-14 w-14">
-              <span className="font-bold text-xl">{"<"}</span>
+              <span className="font-normal text-2xl">{"<"}</span>
             </button>
             <button className="change-menu-button h-14 w-14 ">
-              <span className="font-bold text-xl">{">"}</span>
+              <span className="font-normal text-2xl">{">"}</span>
             </button>
           </div>
         </div>
@@ -151,7 +151,7 @@ const MainPage = () => {
             <img src='./images/review_author.png' alt='review author' />
             <h3>{currentReviewData.author}</h3>
             <img src='./images/rating.png' alt='5 star rating' />
-            <img src='./images/google_review.png' alt='Google review' />
+            <mg src='./images/google_review.png' alt='Google review' />
           </div>
 
           <div className='reviews-image'>
@@ -163,23 +163,73 @@ const MainPage = () => {
       {/* Blog section */}
       <div className=" md:p-32 p-6">
         <div className="blogs">
-          <h2 className="text-xl md:text-2xl lg:text-4xl text-center mb-4 text-[#333F72]">Blogs</h2>
+          <h2 className="text-2xl md:text-4xl lg:text-6xl mb-20 text-[#333F72]">Blogs</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-12 justify-center items-center">
-            {/* Blog Card 1 */}
-            <div className="blog-card">
-              <img src="./images/blog_card.png" alt="Blog 1" />
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-36 md:gap-12 items-center">
 
-            {/* Blog Card 2 */}
-            <div className="blog-card">
-              <img src="./images/blog_card2.png" alt="Blog 2" />
+            {/* <!-- Start Card 1 --> */}
+            <div class="w-full rounded overflow-hidden font-manrope hover:cursor-pointer">
+              <img class="w-full" src="./images/blog1.png" alt="Blog Image" />
+              <div class="pt-4">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">5 min read</span>
+              </div>
+              <div class="py-4">
+                <div class="font-semibold text-xl mb-2">
+                  Eaque Nam Blanditiis Rerum Alias Veratatis Fuga Qui. Beatae Voluptas..
+                </div>
+                <p class="font-normal text-xl mt-6 tracking-wide">
+                  Facere Non Maxime Et Unde Libero Dolor Rerum Atque Voluptatem. Est Aliquid Quo Fugit. Quia Tempore Cul...
+                </p>
+              </div>
+              <div class="px-0 py-4 flex items-center">
+                <img class="h-10 w-10 rounded-full mr-2" src="./images/sudeep.png" alt="Avatar of User" />
+                <p class="text-gray-800 leading-none ">Sudeep Srivastava | 20 Dec 2021</p>
+              </div>
             </div>
+            {/* <!-- End Card 1 --> */}
 
-            {/* Blog Card 3 */}
-            <div className="blog-card">
-              <img src="./images/blog_card3.png" alt="Blog 3" />
+            {/* <!-- Start Card 2 --> */}
+            <div class="w-full rounded overflow-hidden font-manrope hover:cursor-pointer">
+              <img class="w-full" src="./images/blog2.png" alt="Food Image" />
+              <div class="pt-4">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">15 min read</span>
+              </div>
+              <div class="py-4">
+                <div class="font-semibold text-xl mb-2">
+                  Eaque Nam Blanditiis Rerum Alias Veratatis Fuga Qui. Beatae Voluptas..
+                </div>
+                <p class="font-normal text-xl mt-6 tracking-wide">
+                  Facere Non Maxime Et Unde Libero Dolor Rerum Atque Voluptatem. Est Aliquid Quo Fugit. Quia Tempore Cul...
+                </p>
+              </div>
+              <div class="px-0 py-4 flex items-center">
+                <img class="h-10 w-10 rounded-full mr-2" src="./images/sudeep.png" alt="Avatar of User" />
+                <p class="text-gray-800 leading-none ">Sudeep Srivastava | 20 Dec 2021</p>
+              </div>
             </div>
+            {/* <!-- End Card 2 --> */}
+
+            {/* <!-- Start Card 3 --> */}
+            <div class="w-full rounded overflow-hidden font-manrope hover:cursor-pointer">
+              <img class="w-full" src="./images/blog3.png" alt="Food Image" />
+              <div class="pt-4">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">15 min read</span>
+              </div>
+              <div class="py-4"> 
+                <div class="font-semibold text-xl mb-2">
+                  Eaque Nam Blanditiis Rerum Alias Veratatis Fuga Qui. Beatae Voluptas..
+                </div>
+                <p class="font-normal text-xl mt-6 tracking-wide">
+                Facere Non Maxime Et Unde Libero Dolor Rerum Atque Voluptatem. Est Aliquid Quo Fugit. Quia Tempore Cul...
+                </p>
+              </div>
+              <div class="px-0 py-4 flex items-center">
+                <img class="h-10 w-10 rounded-full mr-2" src="./images/sudeep.png" alt="Avatar of User" />
+                <p class="text-gray-800 leading-none ">Sudeep Srivastava | 20 Dec 2021</p>
+              </div>
+            </div>
+            {/* <!-- End Card 3 --> */}
+
           </div>
         </div>
       </div>
@@ -188,7 +238,7 @@ const MainPage = () => {
       <div id="footer" className="footer">
         <div className="map text-center md:text-left md:p-32 mx-auto items-center justify-center p-6">
           {/* Image of the map */}
-          <h2 className="text-xl md:text-2xl lg:text-4xl text-[#333F72]">Visit Us Today</h2>
+          <h2 className="text-2xl md:text-4xl lg:text-6xl text-[#333F72]">Visit Us Today</h2>
           {/* <img className='mx-auto md:mx-0' src='./images/map.png' alt='Map' /> */}
           <div className="flex md:flex-row flex-col w-full mx-auto">
             <div className="bg-[#333F72] p-12 md:w-1/4 w-full">
@@ -206,7 +256,7 @@ const MainPage = () => {
 
             <div className="google-map-code w-full  lg:w-[1200px] md:w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1750.1695838677174!2d77.2074007201103!3d28.679499217588642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%2047%20UA%2C%20Block%20UA%2C%20Jawahar%20Nagar%2C%20Kamla%20Nagar%2C%20New%20Delhi%2C%20Delhi%2C%20110007!5e0!3m2!1sen!2sin!4v1709286543013!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.3083616386994!2d77.20462227490341!3d28.680421025320022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd903c717bd9%3A0x6558e91220220611!2sMomo&#39;s%20Point!5e0!3m2!1sen!2sin!4v1709630526456!5m2!1sen!2sin"
                 frameBorder="0"
                 className="w-full h-full"
                 style={{ border: 0 }}
@@ -218,7 +268,7 @@ const MainPage = () => {
           </div>
         </div>
 
-        <div className="footer-content flex flex-col md:flex-row md:p-24 p-6">
+        <div className="footer-content flex flex-col md:flex-row md:p-12 p-6">
           <div className="footer-logo text-center md:text-left items-center justify-center" >
             {/* Logo */}
             <img
@@ -235,17 +285,17 @@ const MainPage = () => {
             </p>
           </div>
 
-          <div className="footer-links-and-contact flex flex-col md:flex-row gap-6">
-            <div className="footer-links text-center md:text-left">
+          <div className="footer-links-and-contact flex flex-col md:flex-row lg:gap-28">
+            <div className="footer-links text-center md:text-left my-5 text-base md:text-lg lg:text-xl">
               {/* Navigation links */}
               <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#reviews">Reviews</a>
-              <a href="#menu">Our Menu</a>
+              <a href="#about">About Us</a>
+              <a href="#reviews">Our Menu</a>
+              <a href="#menu">Reviews</a>
             </div>
             <div className="footer-contact text-center md:text-left">
               <div>
-                <h2>Get In Touch</h2>
+                <h2 className="font-bold text-xl">Get In Touch</h2>
                 <p>Question or Feedback?</p>
                 <p>We{`'d`} love to hear from you</p>
               </div>
@@ -265,8 +315,8 @@ const MainPage = () => {
 
         </div>
       </div>
-       {isOpen && <ContactForm setIsOpen={setIsOpen} isOpen={isOpen} />}
-    </div>
+      {isOpen && <ContactForm setIsOpen={setIsOpen} isOpen={isOpen} />}
+    </div >
   );
 };
 

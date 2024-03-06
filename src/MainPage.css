@@ -130,7 +130,8 @@
     align-items: center;
 } */
 
-.featured-images img {
+.featured-image {
+    height: 70px;
     /* max-width: 160px; */
     /* margin: 70px 62px; */
     /* margin-top: 70px; */
@@ -433,7 +434,7 @@
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    margin: 2px 44px 34px 0px;
+    /* margin: 2px 44px 34px 0px; */
     display: block;
 }
 
