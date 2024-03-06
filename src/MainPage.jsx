@@ -76,7 +76,7 @@ const MainPage = () => {
       </div>
 
       {/* Menu section */}
-      <div id="menu" className="menu md:p-32 p-6">
+      <div id="menu" className="menu md:p-20 p-6">
         <div className="menu-top flex justify-between items-center">
           <div className="menu-header">
             <p>OUR MENU</p>
@@ -86,10 +86,10 @@ const MainPage = () => {
           </div>
           <div className="menu-btn flex justify-between gap-4">
             <button className="change-menu-button h-14 w-14">
-              <span className="font-normal text-2xl">{"<"}</span>
+                <img className="w-4 h-4 m-auto" src="./images/prev_icon.png" alt="Previous Icon" />
             </button>
             <button className="change-menu-button h-14 w-14 ">
-              <span className="font-normal text-2xl">{">"}</span>
+                <img className="w-4 h-4 m-auto" src="./images/next_icon.png" alt="Next Icon" />
             </button>
           </div>
         </div>
@@ -134,8 +134,12 @@ const MainPage = () => {
       </div>
 
 
+      {/* Reviews section */}
+      <Reviews />
+
+
       {/* Blog section */}
-      <div className=" md:p-32 p-6">
+      <div className=" md:p-20 p-6">
         <div className="blogs">
           <h2 className="text-xl md:text-3xl lg:text-5xl mb-20 text-[#333F72]">Blogs</h2>
 
@@ -210,7 +214,7 @@ const MainPage = () => {
 
       {/* Footer section */}
       <div id="footer" className="footer">
-        <div className="map text-center md:text-left md:p-32 mx-auto items-center justify-center p-6">
+        <div className="map text-center md:text-left md:p-20 mx-auto items-center justify-center p-6">
           {/* Image of the map */}
           <h2 className="text-xl md:text-3xl lg:text-5xl text-[#333F72] mb-20">Visit Us Today</h2>
           {/* <img className='mx-auto md:mx-0' src='./images/map.png' alt='Map' /> */}

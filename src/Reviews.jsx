@@ -35,7 +35,7 @@ const Reviews = () => {
   const currentReviewData = reviewsData[currentReview];
 
   return (
-    <div id="reviews" className='reviews md:p-32 p-4 md:block '>
+    <div id="reviews" className='reviews md:p-20 p-4 md:block '>
       <div className='reviews-header text-center md:text-left'>
         <p>WHAT THEY SAY</p>
         <h2 className='text-2xl md:text-4xl lg:text-6xl'>
@@ -45,15 +45,13 @@ const Reviews = () => {
 
       <div className='reviews-desc flex-col lg:flex-row items-center mt-10 gap-6'>
         {/* <div className='review-btn'> */}
-        <div className='w-3/4'>
+        <div className='w-2/4'>
           <div className='flex gap-6'>
             <button className='change-review-button hidden md:block h-14 w-14' onClick={handleChangeReview}>
-              <span className='font-normal text-2xl'>
-                {'<'}
-              </span>
+              <img className="w-4 h-4 m-auto" src="./images/prev_icon.png" alt="Previous Icon" />
             </button>
 
-            <div className='reviews-card overflow-hidden mx-auto md:mx-0 w-full md:w-[450px] md:h-[600px] h-auto'>
+            <div className='reviews-card overflow-hidden mx-auto md:mx-0 w-full md:w-[458px] md:h-[577px] h-auto'>
               <img src='./images/commas.png' alt='inverted commas' />
               <p className='p-06 md:p-12'>{currentReviewData.content}</p>
               <img src='./images/review_author.png' alt='review author' />
@@ -63,9 +61,7 @@ const Reviews = () => {
             </div>
 
             <button className='change-review-button hidden md:block h-14 w-14' onClick={handleChangeReview}>
-              <span className='font-normal text-2xl'>
-                {'>'}
-              </span>
+              <img className="w-4 h-4 m-auto" src="./images/next_icon.png" alt="Next Icon" />
             </button>
           </div>
 
