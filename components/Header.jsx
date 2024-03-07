@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <>
-      <header id='header' className=''>
+      <header id='header' className='md:px-4 lg:px-32'>
         <div className='logo'>
           <img src={'/images/logo.png'} className='w-10 h-10 lg:h-[80px] lg:w-[80px] md:h-20 md:w-20' alt="Momos Point Logo" />
         </div>
@@ -45,7 +45,7 @@ const Header = () => {
                   <Link to="/#about">About Us</Link>
                   <Link to="/#reviews">Reviews</Link>
                   <Link className='mr-12' to="/#blog">Blog</Link>
-                  <button onClick={() => setIsOpen(true)} className="contact-button">CONTACT US</button>
+                  <button onClick={() => setIsOpen(true)} className="contact-button ">CONTACT US</button>
                 </nav>
               </div>
 
@@ -57,10 +57,10 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
               <nav className='md:block hidden'>
-                <Link to="/">Home</Link>
-                <Link to="/#about">About Us</Link>
-                <Link to="/#reviews">Reviews</Link>
-                <Link to="/#blog">Blog</Link>
+                <Link className="lg:mx-10 md:mx-6" to="/">Home</Link>
+                <Link className="lg:mx-10 md:mx-6" to="/#about">About Us</Link>
+                <Link className="lg:mx-10 md:mx-6" to="/#reviews">Reviews</Link>
+                <Link className="lg:mx-10 md:mx-6" to="/#blog">Blog</Link>
                 <button onClick={() => setIsOpen(true)} className="contact-button">CONTACT US</button>
               </nav>
             </>

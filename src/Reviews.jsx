@@ -38,12 +38,12 @@ const Reviews = () => {
     <div id="reviews" className='reviews md:px-32 py-20 p-4 md:block '>
       <div className='reviews-header text-center md:text-left'>
         <p>WHAT THEY SAY</p>
-        <h2 className='text-2xl md:text-4xl lg:text-6xl'>
+        <h2 className='text-2xl md:text-4xl lg:text-5xl'>
           What Our Customers Say<br /> About Us
         </h2>
       </div>
 
-      <div className='reviews-desc flex-col lg:flex-row items-center mt-10 gap-6'>
+      <div className='reviews-desc flex-col lg:flex-row mt-20 gap-6'>
         {/* <div className='review-btn'> */}
         <div className='w-2/4'>
           <div className='flex gap-6'>
