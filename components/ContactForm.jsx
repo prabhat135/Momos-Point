@@ -154,12 +154,16 @@ const ContactForm = ({ setIsOpen, isOpen }) => {
                             },
                             '& .MuiFormLabel-root': {
                               color: 'white', // label color
+                              fontWeight: 'bold',
+                              borderBottom: '2px solid white', 
                             },
                             '& label.Mui-focused': {
                               color: 'white', // label color when focused
+                              borderBottom: '2px solid white', 
                             },
                             '& .MuiInputBase-input::placeholder': {
-                              color: 'white' // placeholder color
+                              color: 'white', // placeholder color
+                              borderBottom: '2px solid white', 
                             },
                           }}
                       />

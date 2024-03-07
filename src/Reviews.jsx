@@ -43,30 +43,30 @@ const Reviews = () => {
         </h2>
       </div>
 
-      <div className='reviews-desc flex-col lg:flex-row mt-20 gap-6'>
+      <div className='flex flex-col lg:flex-row mt-20 gap-20'>
         {/* <div className='review-btn'> */}
-        <div className='w-2/4'>
+        <div className='w-full lg:w-[600px] '>
           <div className='flex gap-6'>
-            <button className='change-review-button hidden md:block h-14 w-14' onClick={handleChangeReview}>
+            <button className='change-review-button hidden md:block h-14 p-4 w-14 rounded-full' onClick={handleChangeReview}>
               <img className="w-4 h-4 m-auto" src="./images/prev_icon.png" alt="Previous Icon" />
             </button>
 
-            <div className='reviews-card overflow-hidden mx-auto md:mx-0 w-full md:w-[458px] md:h-[577px] h-auto'>
+            <div className='reviews-card overflow-hidden mx-auto w-full h-auto'>
               <img src='./images/commas.png' alt='inverted commas' />
-              <p className='p-06 md:p-12'>{currentReviewData.content}</p>
+              <p className='p-6 md:p-12 h-[400px] overflow-auto'>{currentReviewData.content}</p>
               <img src='./images/review_author.png' alt='review author' />
               <h3>{currentReviewData.author}</h3>
               <img src='./images/rating.png' alt='5 star rating' />
               <img src='./images/google_review.png' alt='Google review' />
             </div>
 
-            <button className='change-review-button hidden md:block h-14 w-14' onClick={handleChangeReview}>
-              <img className="w-4 h-4 m-auto" src="./images/next_icon.png" alt="Next Icon" />
+            <button className='change-review-button hidden md:block  h-14 p-4 w-14 rounded-full' onClick={handleChangeReview}>
+              <img className="w-4 h-4 mx-auto" src="./images/next_icon.png" alt="Next Icon" />
             </button>
           </div>
 
         </div>
-        <div className='reviews-image mx-auto md:mx-0'>
+        <div className='reviews-image mx-auto md:mx-0 lg:ml-14'>
           <img src='./images/review.png' alt='reviews' />
         </div>
       </div>

@@ -264,7 +264,7 @@ const MainPage = () => {
           </div>
 
           <div className="footer-links-and-contact flex flex-col md:flex-row lg:gap-28">
-            <div className="footer-links flex flex-col text-center md:text-left my-5 text-base md:text-lg lg:text-xl">
+            <div className=" flex flex-col text-center md:text-left  text-base md:text-lg lg:text-xl">
               {/* Navigation links */}
               <a href="#home" className="flex-grow text-center md:text-left">Home</a>
               <a href="#about" className="flex-grow text-center md:text-left">About Us</a>
