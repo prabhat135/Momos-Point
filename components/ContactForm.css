@@ -2,12 +2,11 @@
 
 .contact-form-modal {
     position: fixed;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 55%;
-    /* height: 65%; */
-    /* max-width: 600px; */
+    transform: translate(-50%, -50%); */
+    /* width: 55%; */
+    /* height: 100px; */
     background-color: #333F72;
     padding: 20px;
     border-radius: 10px;
@@ -34,7 +33,7 @@
     /* flex-direction: column; */
 }
 
-.contact-form-modal h4 {
+.title {
     /* margin-bottom: 20px; */
     font-family: 'Protest revolution';
     font-weight: 500;
@@ -64,7 +63,7 @@
 
 .contact-form-modal textarea {
     /* width: 70%; */
-    height: 110px;
+    /* height: 110px; */
     resize: none;
 }
 
@@ -74,13 +73,12 @@
     outline: none;
 }
 
-.contact-form-modal button {
+.contactusButton {
     background-color: #F3EDE1;
     color: #333F72;
     border: none;
     cursor: pointer;
     /* margin: 40px 0px 0px 43%; */
-    padding: 10px 35px;
     font-size: 22px;
     border-radius: 17px 0 17px 0;
     align-items: center;
@@ -89,6 +87,7 @@
 /* .contact-form-field {
     margin: 35px 0px 0px 200px;
 } */
+
 
 
 ::placeholder {
