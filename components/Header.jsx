@@ -57,10 +57,10 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
               <nav className='md:block hidden'>
-                <Link className="lg:mx-10 md:mx-6" to="/">Home</Link>
-                <Link className="lg:mx-10 md:mx-6" to="/#about">About Us</Link>
-                <Link className="lg:mx-10 md:mx-6" to="/#reviews">Reviews</Link>
-                <Link className="lg:mx-10 md:mx-6" to="/#blog">Blog</Link>
+                <Link className="lg:mx-9 md:mx-6" to="/">Home</Link>
+                <Link className="lg:mx-9 md:mx-6" to="/#about">About Us</Link>
+                <Link className="lg:mx-9 md:mx-6" to="/#reviews">Reviews</Link>
+                <Link className="lg:mx-9 md:mx-6" to="/#blog">Blog</Link>
                 <button onClick={() => setIsOpen(true)} className="contact-button">CONTACT US</button>
               </nav>
             </>

@@ -13,13 +13,16 @@ const MainPage = () => {
       {/* Home section */}
       <div
         id="home"
-        className="home flex flex-col items-center justify-center text-center min-h-[830px]"
+        className="home flex flex-col items-center justify-center text-center"
+        style={{
+          minHeight: "90vh",
+        }}
       >
-        <div className="home_content">
-          <h1 className="text-2xl md:text-4xl lg:text-7xl">
+        <div className="home_content h-auto">
+          <h1 className="text-2xl md:text-5xl lg:text-7xl">
             Your Next Culinary Adventure
           </h1>
-          <h1 className="text-2xl md:text-4xl lg:text-7xl">
+          <h1 className="text-2xl md:text-5xl lg:text-7xl">
             Awaits at Momos Point
           </h1>
           <p className="text-base md:text-lg lg:text-xl">
@@ -40,9 +43,9 @@ const MainPage = () => {
       </div>
 
       {/* About section */}
-      <div id="about" className="about md:px-32 lg:pb-20 p-6 lg:pt-40">
+      <div id="about" className="about md:px-32 lg:pb-20 p-12 lg:pt-40">
         <div className="aboutus flex flex-col md:flex-row lg:pb-20">
-          <div className="w-full md:w-1/2 text-center items-center justify-center">
+          <div className="w-full md:w-1/2 flex items-center justify-center">
             <img className="w-3/4" src="./images/aboutus.png" alt="About Us" />
           </div>
           <div className="aboutus_content w-full md:w-1/2 p-2 md:p-6 lg:p-12">
@@ -246,7 +249,7 @@ const MainPage = () => {
           </div>
         </div>
 
-        <div className="footer-content flex flex-col md:flex-row md:p-12 p-6">
+        <div className="footer-content flex flex-col md:flex-row md:py-12 md:px-32 p-6">
           <div className="footer-logo text-center md:text-left items-center justify-center" >
             {/* Logo */}
             <img
