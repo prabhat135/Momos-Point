@@ -38,7 +38,10 @@ const ContactForm = ({ setIsOpen, isOpen }) => {
       fullWidth
       maxWidth="md"
       onClose={() => setIsOpen(false)}
-      className="relative z-50  h-auto mx-auto overflow-auto ">
+      PaperProps={{
+        style: { zIndex: 10001 }, // This ensures the Dialog is above the overlay
+      }}
+      className="relative z-20 h-auto mx-auto overflow-auto ">
       <DialogTitle className='bg-[#333F72] flex justify-between '>
         <span className=' items-center mt-4 text-white title text-lg sm:text-xl md:text-4xl pl-4'>Reach to Us</span>
         <h4 className="close-arrow text-2xl sm:text-4xl md:text-6xl text-white" onClick={() => setIsOpen(false)}>&times;</h4>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./MainPage.css";
 import Reviews from "./Reviews";
 import ContactForm from "../components/ContactForm";
+import { Link as ScrollLink } from 'react-scroll';
 
 
 const MainPage = () => {
@@ -142,7 +143,7 @@ const MainPage = () => {
 
 
       {/* Blog section */}
-      <div className=" md:px-32 py-20 p-6">
+      <div id="blog" className=" md:px-32 py-20 p-6">
         <div className="blogs">
           <h2 className="text-2xl md:text-4xl lg:text-5xl mb-20 text-[#333F72]">Blogs</h2>
 
@@ -269,10 +270,54 @@ const MainPage = () => {
           <div className="footer-links-and-contact flex flex-col md:flex-row lg:gap-28">
             <div className=" flex flex-col text-center md:text-left  text-base md:text-lg lg:text-xl">
               {/* Navigation links */}
-              <a href="#home" className="flex-grow text-center md:text-left">Home</a>
+              {/* <a href="#home" className="flex-grow text-center md:text-left">Home</a>
               <a href="#about" className="flex-grow text-center md:text-left">About Us</a>
               <a href="#menu" className="flex-grow text-center md:text-left">Our Menu</a>
-              <a href="#reviews" className="flex-grow text-center md:text-left">Reviews</a>
+              <a href="#reviews" className="flex-grow text-center md:text-left">Reviews</a> */}
+              <ScrollLink
+                  to="home" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  Home
+                </ScrollLink>
+                
+                <ScrollLink
+                  to="about" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  About Us
+                </ScrollLink>
+
+                <ScrollLink
+                  to="reviews" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  Reviews
+                </ScrollLink>
+              
+                <ScrollLink
+                  to="blog" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  Blog
+                </ScrollLink>
+
             </div>
             <div className="footer-contact text-center md:text-left">
               <div>

@@ -43,7 +43,7 @@ const Reviews = () => {
         </h2>
       </div>
 
-      <div className='flex flex-col lg:flex-row mt-20 gap-20'>
+      <div className='flex flex-col lg:flex-row mt-20 lg:gap-20 gap-2 '>
         {/* <div className='review-btn'> */}
         <div className='w-full lg:w-[600px] '>
           <div className='flex gap-6'>

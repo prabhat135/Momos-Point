@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import ContactForm from './ContactForm';
+import { Link as ScrollLink } from 'react-scroll';
 
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 120) {
         header.style.background = "#F3EDE1";
-        header.style.zIndex = "9999";
+        header.style.zIndex = "10";
         header.style.transition = "all 0.5s ease-in-out";
         header.style.opacity = "1";
         header.style.visibility = "visible";
@@ -39,7 +40,7 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
               </svg>
               {/* mobile view */}
-              <div className='bg-red-500 absolute mt-[500px] w-[100%] p-5'>
+              <div className='bg-[#F3EDE1] absolute mt-[500px] w-[100%] p-5'>
                 <nav className='md:block gap-6 flex-col rounded-lg'>
                   <Link to="/">Home</Link>
                   <Link to="/#about">About Us</Link>
@@ -57,10 +58,53 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
               <nav className='md:block hidden'>
-                <Link className="lg:mx-9 md:mx-6" to="/">Home</Link>
-                <Link className="lg:mx-9 md:mx-6" to="/#about">About Us</Link>
-                <Link className="lg:mx-9 md:mx-6" to="/#reviews">Reviews</Link>
-                <Link className="lg:mx-9 md:mx-6" to="/#blog">Blog</Link>
+                {/* <Link className="lg:mx-9 md:mx-6" to="/#about">About Us</Link> */}
+                {/* <Link className="lg:mx-9 md:mx-6" to="/">Home</Link> */}
+                {/* <Link className="lg:mx-9 md:mx-6" to="/#reviews"></Link> */}
+                {/* <Link className="lg:mx-9 md:mx-6" to="/#blog">Blog</Link> */}
+                <ScrollLink
+                  to="home" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  Home
+                </ScrollLink>
+                
+                <ScrollLink
+                  to="about" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  About Us
+                </ScrollLink>
+
+                <ScrollLink
+                  to="reviews" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  Reviews
+                </ScrollLink>
+                
+                <ScrollLink
+                  to="blog" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  Blog
+                </ScrollLink>
                 <button onClick={() => setIsOpen(true)} className="contact-button">CONTACT US</button>
               </nav>
             </>
@@ -70,7 +114,7 @@ const Header = () => {
       </header>,
       {isOpen && (
         <>
-          <div className="fixed inset-0 bg-black bg-opacity-80 z-10" />
+          <div className="fixed inset-0 bg-black bg-opacity-10 z-20" />
           <ContactForm setIsOpen={setIsOpen} isOpen={isOpen} />
         </>
       )}
