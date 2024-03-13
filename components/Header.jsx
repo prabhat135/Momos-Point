@@ -31,7 +31,15 @@ const Header = () => {
     <>
       <header id='header' className='md:px-4 lg:px-32'>
         <div className='logo'>
-          <img src={'/images/logo.png'} className='w-10 h-10 lg:h-[80px] lg:w-[80px] md:h-20 md:w-20' alt="Momos Point Logo" />
+        <ScrollLink
+            to="home" // the id of the element you want to scroll to
+            spy={true}
+            smooth={true}
+            offset={-100} // adjust the offset to the height of your header or any fixed elements
+            duration={500}
+          >
+            <img src={'/images/logo.png'} className='w-10 h-10 lg:h-[80px] lg:w-[80px] md:h-20 md:w-20' alt="Momos Point Logo" />
+          </ScrollLink>
         </div>
         {
           open ? (
@@ -50,7 +58,7 @@ const Header = () => {
                   to="home" // the id of the element you want to scroll to
                   spy={true}
                   smooth={true}
-                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  offset={-100} // adjust the offset to the height of your header or any fixed elements
                   duration={500}
                 >
                   Home
@@ -106,7 +114,7 @@ const Header = () => {
                   to="home" // the id of the element you want to scroll to
                   spy={true}
                   smooth={true}
-                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  offset={-100} // adjust the offset to the height of your header or any fixed elements
                   duration={500}
                   className="lg:mx-9 md:mx-6"
                 >

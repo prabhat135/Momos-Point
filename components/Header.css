@@ -20,7 +20,7 @@ header img {
 
 header nav {
     display: flex;
-    /* margin-top: 10px; */
+    cursor: pointer;
 }
 
 header a {

@@ -420,9 +420,8 @@
     margin-top: 22px;
 }
 
-.footer-links-and-contact {
-    /* display: flex; */
-    /* margin: 0px 140px; */
+.footer-links {
+    cursor: pointer;
 }
 
 .footer-links a {
