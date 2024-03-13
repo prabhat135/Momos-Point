@@ -67,7 +67,7 @@ const MainPage = () => {
 
         <div className="featured w-full mt-20">
           <h2 className="text-2xl md:text-4xl lg:text-5xl text-left mb-20">We Featured On</h2>
-          <div className="featured-images flex flex-row overflow-auto justify-between gap-6">
+          <div className="featured-images flex-row justify-between gap-6 hidden md:flex">
             <img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" />
             <img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" />
             <img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" />
@@ -76,6 +76,19 @@ const MainPage = () => {
             <img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" />
             {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
           </div>
+            <marquee behavior="alternate" className='block md:hidden'>
+          <div className="featured-images flex flex-row justify-between gap-6">
+            <img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" />
+            <img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" />
+            <img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" />
+            <img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" />
+            <img className="featured-image cursor-pointer" width={150} src="./images/f05.png" alt="Company 5" />
+            <img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" />
+            {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
+          </div>
+            </marquee>
+         
+           
         </div>
       </div>
 

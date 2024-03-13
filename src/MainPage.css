@@ -124,7 +124,11 @@
     /* text-align: left; */
 }
 
-
+/* .featured-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .featured-image {
     height: 70px;
@@ -280,14 +284,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 20px; */
+    margin-top: 20px;
 }
 
 .reviews-card img:nth-child(3) {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 10px; */
+    margin-top: 20px;
     cursor: pointer;
 }
 
@@ -296,7 +300,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 15px; */
+    margin-top: 15px;
     cursor: pointer;
 }
 
@@ -304,7 +308,7 @@
 .reviews-card h3 {
     text-align: center;
     font-weight: 600;
-    /* margin-top: 15px; */
+    /* margin: 15px 0px; */
     cursor: pointer;
 }
 
