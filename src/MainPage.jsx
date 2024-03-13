@@ -265,14 +265,22 @@ const MainPage = () => {
 
         <div className="footer-content flex flex-col md:flex-row md:py-12 md:px-32 p-6">
           <div className="footer-logo text-center md:text-left items-center justify-center" >
-            {/* Logo */}
-            <img
-              className="mx-auto md:mx-0 items-center justify-center text-center"
-              height={120}
-              width={120}
-              src="./images/logo.png"
-              alt="Momos Point Logo"
-            />
+          <ScrollLink
+              to="home" // the id of the element you want to scroll to
+              spy={true}
+              smooth={true}
+              offset={-100} // adjust the offset to the height of your header or any fixed elements
+              duration={500}
+            >
+              {/* Logo */}
+              <img
+                className="mx-auto md:mx-0 items-center justify-center text-center"
+                height={120}
+                width={120}
+                src="./images/logo.png"
+                alt="Momos Point Logo"
+              />
+            </ScrollLink>
             <p>
               Our Job is to filling your tummy
               <br /> with delicious food and with
@@ -281,7 +289,7 @@ const MainPage = () => {
           </div>
 
           <div className="footer-links-and-contact flex flex-col md:flex-row lg:gap-28">
-            <div className=" flex flex-col text-center md:text-left  text-base md:text-lg lg:text-xl">
+            <div className="footer-links flex flex-col text-center md:text-left  text-base md:text-lg lg:text-xl">
               {/* Navigation links */}
               {/* <a href="#home" className="flex-grow text-center md:text-left">Home</a>
               <a href="#about" className="flex-grow text-center md:text-left">About Us</a>
@@ -291,7 +299,7 @@ const MainPage = () => {
                   to="home" // the id of the element you want to scroll to
                   spy={true}
                   smooth={true}
-                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  offset={-100} // adjust the offset to the height of your header or any fixed elements
                   duration={500}
                   className="lg:mx-9 md:mx-6"
                 >
