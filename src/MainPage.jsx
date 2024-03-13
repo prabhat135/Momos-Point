@@ -67,7 +67,7 @@ const MainPage = () => {
 
         <div className="featured w-full mt-20">
           <h2 className="text-2xl md:text-4xl lg:text-5xl text-left mb-20">We Featured On</h2>
-          <div className="flex flex-wrap justify-between gap-6">
+          <div className="featured-images flex flex-row overflow-auto justify-between gap-6">
             <img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" />
             <img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" />
             <img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" />

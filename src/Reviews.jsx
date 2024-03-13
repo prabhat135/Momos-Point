@@ -45,19 +45,19 @@ const Reviews = () => {
 
       <div className='flex flex-col lg:flex-row mt-20 lg:gap-20 gap-2 '>
         {/* <div className='review-btn'> */}
-        <div className='w-full lg:w-[600px] '>
+        <div className='w-full lg:w-[600px] 2xl:w-[50%]'>
           <div className='flex gap-6'>
             <button className='change-review-button hidden md:block h-14 p-4 w-14 rounded-full' onClick={handleChangeReview}>
               <img className="w-4 h-4 m-auto" src="./images/prev_icon.png" alt="Previous Icon" />
             </button>
 
-            <div className='reviews-card overflow-hidden mx-auto w-full h-auto'>
-              <img src='./images/commas.png' alt='inverted commas' />
-              <p className='p-6 md:p-12 h-[400px] overflow-auto'>{currentReviewData.content}</p>
-              <img src='./images/review_author.png' alt='review author' />
-              <h3>{currentReviewData.author}</h3>
-              <img src='./images/rating.png' alt='5 star rating' />
-              <img src='./images/google_review.png' alt='Google review' />
+            <div className='reviews-card overflow-hidden mx-auto w-full sm:w-[400px] md:w-[450px] lg:w-[475px] h-auto'>
+              <img className='mt-[15px] sm:mt-[20px]' src='./images/commas.png' alt='inverted commas' />
+              <p   className='p-6 md:p-6 h-[200px] sm:h-[300px] overflow-auto text-xs sm:text-base'>{currentReviewData.content}</p>
+              <img className='mt-[07px] sm:mt-[10px]' src='./images/review_author.png' alt='review author' />
+              <h3  className='mt-[10px] sm:mt-[15px]'>{currentReviewData.author}</h3>
+              <img className='mt-[10px] sm:mt-[15px]' src='./images/rating.png' alt='5 star rating' />
+              <img className='mt-[10px] sm:mt-[15px]' src='./images/google_review.png' alt='Google review' />
             </div>
 
             <button className='change-review-button hidden md:block  h-14 p-4 w-14 rounded-full' onClick={handleChangeReview}>

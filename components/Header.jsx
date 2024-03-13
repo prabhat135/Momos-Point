@@ -41,11 +41,51 @@ const Header = () => {
               </svg>
               {/* mobile view */}
               <div className='bg-[#F3EDE1] absolute mt-[500px] w-[100%] p-5'>
-                <nav className='md:block gap-6 flex-col rounded-lg'>
-                  <Link to="/">Home</Link>
+                <nav className='md:block gap-6 flex-col rounded-lg text-black'>
+                  {/* <Link to="/">Home</Link>
                   <Link to="/#about">About Us</Link>
                   <Link to="/#reviews">Reviews</Link>
-                  <Link className='mr-12' to="/#blog">Blog</Link>
+                  <Link className='mr-12' to="/#blog">Blog</Link> */}
+                  <ScrollLink
+                  to="home" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                >
+                  Home
+                </ScrollLink>
+                
+                <ScrollLink
+                  to="about" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                >
+                  About Us
+                </ScrollLink>
+
+                <ScrollLink
+                  to="reviews" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                >
+                  Reviews
+                </ScrollLink>
+                
+                <ScrollLink
+                  to="blog" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="mr-12"
+                >
+                  Blog
+                </ScrollLink>
                   <button onClick={() => setIsOpen(true)} className="contact-button ">CONTACT US</button>
                 </nav>
               </div>
