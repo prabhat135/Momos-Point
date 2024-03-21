@@ -251,9 +251,9 @@ const MainPage = () => {
               </span>
               <hr className="mt-10 opacity-0" />
               <div className="flex items-center justify-center md:justify-stretch">
-                <img src="/images/phone-call.png" className="w-8 h-8" />
+                <img src="/images/white_phone.png" className="w-8 h-8" />
                 {/* make this p tag text center */}
-                <p className="text-lg font-bold ml-4">088513 30111</p> 
+                <span className="text-lg ml-4">08851330111</span> 
               </div>
               <hr className="mt-10 opacity-0" />
               <button onClick={() => setIsOpen(true)} className="order-button">CONTACT US</button>
