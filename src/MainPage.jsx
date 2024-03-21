@@ -19,7 +19,7 @@ const MainPage = () => {
           minHeight: "90vh",
         }}
       >
-        <div className="home_content h-auto">
+        <div className="home_content h-auto mb-16">
           <h1 className="text-2xl md:text-5xl lg:text-7xl">
             Your Next Culinary Adventure
           </h1>
@@ -33,12 +33,16 @@ const MainPage = () => {
           </p>
 
           <div className="buttons flex flex-col gap-4 md:flex-row">
-            <button className="order-button red w-full p-4">
-              ORDER&nbsp;ON&nbsp;ZOMATO
-            </button>
-            <button className="order-button orange w-full p-4">
-              ORDER&nbsp;ON&nbsp;SWIGGY
-            </button>
+            <a href="https://www.zomato.com/ncr/momos-point-kamla-nagar-new-delhi/order" target="blank">
+              <button className="order-button red w-full p-4">
+                ORDER&nbsp;ON&nbsp;ZOMATO
+              </button>
+            </a>
+            <a href="https://www.swiggy.com/restaurants/momos-point-kamla-nagar-delhi-180373" target="blank">
+              <button className="order-button orange w-full p-4">
+                ORDER&nbsp;ON&nbsp;SWIGGY
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -68,27 +72,27 @@ const MainPage = () => {
         <div className="featured w-full mt-20">
           <h2 className="text-2xl md:text-4xl lg:text-5xl text-left mb-20">We Featured On</h2>
           <div className="featured-images flex-row justify-between gap-6 hidden md:flex">
-            <img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" />
-            <img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" />
-            <img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" />
-            <img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" />
+            <a href="https://www.cntraveller.in/story/best-momos-in-delhi-as-picked-by-the-citys-top-foodies/" target="blank"><img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" /></a>
+            <a href="https://timesofindia.indiatimes.com/travel/delhi/momos-point/ps47677069.cms" target="blank"><img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" /></a>
+            <a href="https://www.india.com/webstories/travel/articles/13-best-places-in-delhi-ncr-for-juiciest-momos-dolma-aunty-majnu-ka-tila-brown-sugar-best-momos-in-delhi-list-6327438/" target="blank"><img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" /></a>
+            <a href="https://www.filmfare.com/features/sushants-food-secrets-5223.html" target="blank"><img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" /></a>
             <img className="featured-image cursor-pointer" width={150} src="./images/f05.png" alt="Company 5" />
-            <img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" />
+            <a href="https://curlytales.com/5-best-places-to-eat-tandoori-momos-in-delhi/" target="blank"><img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" /></a>
             {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
           </div>
-            <marquee behavior="alternate" className='block md:hidden'>
-          <div className="featured-images flex flex-row justify-between gap-6">
-            <img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" />
-            <img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" />
-            <img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" />
-            <img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" />
-            <img className="featured-image cursor-pointer" width={150} src="./images/f05.png" alt="Company 5" />
-            <img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" />
-            {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
-          </div>
-            </marquee>
-         
-           
+          <marquee behavior="alternate" className='block md:hidden'>
+            <div className="featured-images flex flex-row justify-between gap-6">
+              <a href="https://www.cntraveller.in/story/best-momos-in-delhi-as-picked-by-the-citys-top-foodies/" target="blank"><img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" /></a>
+              <a href="https://timesofindia.indiatimes.com/travel/delhi/momos-point/ps47677069.cms" target="blank"><img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" /></a>
+              <a href="https://www.india.com/webstories/travel/articles/13-best-places-in-delhi-ncr-for-juiciest-momos-dolma-aunty-majnu-ka-tila-brown-sugar-best-momos-in-delhi-list-6327438/" target="blank"><img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" /></a>
+              <a href="https://www.filmfare.com/features/sushants-food-secrets-5223.html" target="blank"><img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" /></a>
+              <img className="featured-image cursor-pointer" width={150} src="./images/f05.png" alt="Company 5" />
+              <a href="https://curlytales.com/5-best-places-to-eat-tandoori-momos-in-delhi/" target="blank"><img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" /></a>
+              {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
+            </div>
+          </marquee>
+
+
         </div>
       </div>
 
@@ -103,10 +107,10 @@ const MainPage = () => {
           </div>
           <div className="menu-btn flex justify-between gap-4">
             <button className="change-menu-button h-14 w-14">
-                <img className="w-4 h-4 m-auto" src="./images/prev_icon.png" alt="Previous Icon" />
+              <img className="w-4 h-4 m-auto" src="./images/prev_icon.png" alt="Previous Icon" />
             </button>
             <button className="change-menu-button h-14 w-14 ">
-                <img className="w-4 h-4 m-auto" src="./images/next_icon.png" alt="Next Icon" />
+              <img className="w-4 h-4 m-auto" src="./images/next_icon.png" alt="Next Icon" />
             </button>
           </div>
         </div>
@@ -156,13 +160,13 @@ const MainPage = () => {
 
 
       {/* Blog section */}
-      <div id="blog" className=" md:px-32 py-20 p-6">
+      {/* <div id="blog" className=" md:px-32 py-20 p-6">
         <div className="blogs">
           <h2 className="text-2xl md:text-4xl lg:text-5xl mb-20 text-[#333F72]">Blogs</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-36 md:gap-12 items-center">
 
-            {/* <!-- Start Card 1 --> */}
+            
             <div class="w-full rounded overflow-hidden font-manrope hover:cursor-pointer">
               <img class="w-full" src="./images/blog1.png" alt="Blog Image" />
               <div class="pt-4">
@@ -181,9 +185,9 @@ const MainPage = () => {
                 <p class="text-gray-800 leading-none ">Sudeep Srivastava | 20 Dec 2021</p>
               </div>
             </div>
-            {/* <!-- End Card 1 --> */}
+            
 
-            {/* <!-- Start Card 2 --> */}
+            
             <div class="w-full rounded overflow-hidden font-manrope hover:cursor-pointer">
               <img class="w-full" src="./images/blog2.png" alt="Food Image" />
               <div class="pt-4">
@@ -202,9 +206,9 @@ const MainPage = () => {
                 <p class="text-gray-800 leading-none ">Sudeep Srivastava | 20 Dec 2021</p>
               </div>
             </div>
-            {/* <!-- End Card 2 --> */}
+            
 
-            {/* <!-- Start Card 3 --> */}
+            
             <div class="w-full rounded overflow-hidden font-manrope hover:cursor-pointer">
               <img class="w-full" src="./images/blog3.png" alt="Food Image" />
               <div class="pt-4">
@@ -223,15 +227,15 @@ const MainPage = () => {
                 <p class="text-gray-800 leading-none ">Sudeep Srivastava | 20 Dec 2021</p>
               </div>
             </div>
-            {/* <!-- End Card 3 --> */}
+            
 
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer section */}
       <div id="footer" className="footer">
-        <div className="map text-center md:text-left md:px-32 py-20 mx-auto items-center justify-center p-6">
+        <div className="map text-center md:text-left md:px-32 pb-20 mx-auto items-center justify-center p-6">
           {/* Image of the map */}
           <h2 className="text-2xl md:text-4xl lg:text-5xl text-[#333F72] mb-20">Visit Us Today</h2>
           {/* <img className='mx-auto md:mx-0' src='./images/map.png' alt='Map' /> */}
@@ -240,12 +244,18 @@ const MainPage = () => {
               <h1 className="text-4xl my-4">
                 Address
               </h1>
-              <span className="text-lg">Momos Point</span>
-              <hr className="mt-20 opacity-0" />
+              <span className="text-lg font-semibold">Momos Point</span>
+              <hr className="mt-6 opacity-0" />
               <span className="">
                 47 UA, Block UA, Jawahar Nagar, Kamla Nagar, New Delhi, Delhi, 110007
               </span>
-              <hr className="mt-20 opacity-0" />
+              <hr className="mt-10 opacity-0" />
+              <div className="flex items-center justify-center md:justify-stretch">
+                <img src="/images/phone-call.png" className="w-8 h-8" />
+                {/* make this p tag text center */}
+                <p className="text-lg font-bold ml-4">088513 30111</p> 
+              </div>
+              <hr className="mt-10 opacity-0" />
               <button onClick={() => setIsOpen(true)} className="order-button">CONTACT US</button>
             </div>
 
@@ -265,7 +275,7 @@ const MainPage = () => {
 
         <div className="footer-content flex flex-col md:flex-row md:py-12 md:px-32 p-6">
           <div className="footer-logo text-center md:text-left items-center justify-center" >
-          <ScrollLink
+            <ScrollLink
               to="home" // the id of the element you want to scroll to
               spy={true}
               smooth={true}
@@ -296,48 +306,48 @@ const MainPage = () => {
               <a href="#menu" className="flex-grow text-center md:text-left">Our Menu</a>
               <a href="#reviews" className="flex-grow text-center md:text-left">Reviews</a> */}
               <ScrollLink
-                  to="home" // the id of the element you want to scroll to
-                  spy={true}
-                  smooth={true}
-                  offset={-100} // adjust the offset to the height of your header or any fixed elements
-                  duration={500}
-                  className="lg:mx-9 md:mx-6"
-                >
-                  Home
-                </ScrollLink>
-                
-                <ScrollLink
-                  to="about" // the id of the element you want to scroll to
-                  spy={true}
-                  smooth={true}
-                  offset={-70} // adjust the offset to the height of your header or any fixed elements
-                  duration={500}
-                  className="lg:mx-9 md:mx-6"
-                >
-                  About Us
-                </ScrollLink>
+                to="home" // the id of the element you want to scroll to
+                spy={true}
+                smooth={true}
+                offset={-100} // adjust the offset to the height of your header or any fixed elements
+                duration={500}
+                className="lg:mx-9 md:mx-6"
+              >
+                Home
+              </ScrollLink>
 
-                <ScrollLink
-                  to="reviews" // the id of the element you want to scroll to
-                  spy={true}
-                  smooth={true}
-                  offset={-70} // adjust the offset to the height of your header or any fixed elements
-                  duration={500}
-                  className="lg:mx-9 md:mx-6"
-                >
-                  Reviews
-                </ScrollLink>
-              
-                <ScrollLink
-                  to="blog" // the id of the element you want to scroll to
-                  spy={true}
-                  smooth={true}
-                  offset={-70} // adjust the offset to the height of your header or any fixed elements
-                  duration={500}
-                  className="lg:mx-9 md:mx-6"
-                >
-                  Blog
-                </ScrollLink>
+              <ScrollLink
+                to="about" // the id of the element you want to scroll to
+                spy={true}
+                smooth={true}
+                offset={-70} // adjust the offset to the height of your header or any fixed elements
+                duration={500}
+                className="lg:mx-9 md:mx-6"
+              >
+                About Us
+              </ScrollLink>
+
+              <ScrollLink
+                to="reviews" // the id of the element you want to scroll to
+                spy={true}
+                smooth={true}
+                offset={-70} // adjust the offset to the height of your header or any fixed elements
+                duration={500}
+                className="lg:mx-9 md:mx-6"
+              >
+                Reviews
+              </ScrollLink>
+
+              <ScrollLink
+                to="blog" // the id of the element you want to scroll to
+                spy={true}
+                smooth={true}
+                offset={-70} // adjust the offset to the height of your header or any fixed elements
+                duration={500}
+                className="lg:mx-9 md:mx-6"
+              >
+                Blog
+              </ScrollLink>
 
             </div>
             <div className="footer-contact text-center md:text-left">

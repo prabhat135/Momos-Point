@@ -384,10 +384,10 @@
 }
 
 .map img {
-    width: 58%;
+    /* width: 58%;
     height: 70%;
     margin-top: 43px;
-    margin-left: 20%;
+    margin-left: 20%; */
     cursor: pointer;
 }
 
@@ -453,7 +453,7 @@
     border: none;
     border-top: 1px solid #fff;
     width: 100%;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 .footer-text {
