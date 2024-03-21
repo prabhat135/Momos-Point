@@ -48,7 +48,7 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
               </svg>
               {/* mobile view */}
-              <div className='bg-[#F3EDE1] absolute mt-[500px] w-[100%] p-5'>
+              <div className='bg-[#F3EDE1] absolute mt-[416px] w-[100%] p-5'>
                 <nav className='md:block gap-6 flex-col rounded-lg text-black'>
                   {/* <Link to="/">Home</Link>
                   <Link to="/#about">About Us</Link>
@@ -75,6 +75,17 @@ const Header = () => {
                 </ScrollLink>
 
                 <ScrollLink
+                  to="menu" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="mr-12"
+                >
+                  Menu
+                </ScrollLink>
+
+                <ScrollLink
                   to="reviews" // the id of the element you want to scroll to
                   spy={true}
                   smooth={true}
@@ -84,16 +95,6 @@ const Header = () => {
                   Reviews
                 </ScrollLink>
                 
-                <ScrollLink
-                  to="blog" // the id of the element you want to scroll to
-                  spy={true}
-                  smooth={true}
-                  offset={-70} // adjust the offset to the height of your header or any fixed elements
-                  duration={500}
-                  className="mr-12"
-                >
-                  Blog
-                </ScrollLink>
                   <button onClick={() => setIsOpen(true)} className="contact-button ">CONTACT US</button>
                 </nav>
               </div>
@@ -133,6 +134,17 @@ const Header = () => {
                 </ScrollLink>
 
                 <ScrollLink
+                  to="menu" // the id of the element you want to scroll to
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // adjust the offset to the height of your header or any fixed elements
+                  duration={500}
+                  className="lg:mx-9 md:mx-6"
+                >
+                  Menu
+                </ScrollLink>
+
+                <ScrollLink
                   to="reviews" // the id of the element you want to scroll to
                   spy={true}
                   smooth={true}
@@ -143,16 +155,6 @@ const Header = () => {
                   Reviews
                 </ScrollLink>
                 
-                <ScrollLink
-                  to="blog" // the id of the element you want to scroll to
-                  spy={true}
-                  smooth={true}
-                  offset={-70} // adjust the offset to the height of your header or any fixed elements
-                  duration={500}
-                  className="lg:mx-9 md:mx-6"
-                >
-                  Blog
-                </ScrollLink>
                 <button onClick={() => setIsOpen(true)} className="contact-button">CONTACT US</button>
               </nav>
             </>

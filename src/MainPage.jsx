@@ -72,22 +72,32 @@ const MainPage = () => {
         <div className="featured w-full mt-20">
           <h2 className="text-2xl md:text-4xl lg:text-5xl text-left mb-20">We Featured On</h2>
           <div className="featured-images flex-row justify-between gap-6 hidden md:flex">
-            <a href="https://www.cntraveller.in/story/best-momos-in-delhi-as-picked-by-the-citys-top-foodies/" target="blank"><img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" /></a>
-            <a href="https://timesofindia.indiatimes.com/travel/delhi/momos-point/ps47677069.cms" target="blank"><img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" /></a>
-            <a href="https://www.india.com/webstories/travel/articles/13-best-places-in-delhi-ncr-for-juiciest-momos-dolma-aunty-majnu-ka-tila-brown-sugar-best-momos-in-delhi-list-6327438/" target="blank"><img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" /></a>
-            <a href="https://www.filmfare.com/features/sushants-food-secrets-5223.html" target="blank"><img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" /></a>
+            <a href="https://www.cntraveller.in/story/best-momos-in-delhi-as-picked-by-the-citys-top-foodies/" target="blank">
+              <img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" /></a>
+            <a href="https://timesofindia.indiatimes.com/travel/delhi/momos-point/ps47677069.cms" target="blank">
+              <img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" /></a>
+            <a href="https://www.india.com/webstories/travel/articles/13-best-places-in-delhi-ncr-for-juiciest-momos-dolma-aunty-majnu-ka-tila-brown-sugar-best-momos-in-delhi-list-6327438/" target="blank">
+              <img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" /></a>
+            <a href="https://www.filmfare.com/features/sushants-food-secrets-5223.html" target="blank">
+              <img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" /></a>
             <img className="featured-image cursor-pointer" width={150} src="./images/f05.png" alt="Company 5" />
-            <a href="https://curlytales.com/5-best-places-to-eat-tandoori-momos-in-delhi/" target="blank"><img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" /></a>
+            <a href="https://curlytales.com/5-best-places-to-eat-tandoori-momos-in-delhi/" target="blank">
+              <img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" /></a>
             {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
           </div>
           <marquee behavior="alternate" className='block md:hidden'>
             <div className="featured-images flex flex-row justify-between gap-6">
-              <a href="https://www.cntraveller.in/story/best-momos-in-delhi-as-picked-by-the-citys-top-foodies/" target="blank"><img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" /></a>
-              <a href="https://timesofindia.indiatimes.com/travel/delhi/momos-point/ps47677069.cms" target="blank"><img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" /></a>
-              <a href="https://www.india.com/webstories/travel/articles/13-best-places-in-delhi-ncr-for-juiciest-momos-dolma-aunty-majnu-ka-tila-brown-sugar-best-momos-in-delhi-list-6327438/" target="blank"><img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" /></a>
-              <a href="https://www.filmfare.com/features/sushants-food-secrets-5223.html" target="blank"><img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" /></a>
+              <a href="https://www.cntraveller.in/story/best-momos-in-delhi-as-picked-by-the-citys-top-foodies/" target="blank">
+                <img className="featured-image cursor-pointer" width={150} src="./images/f01.png" alt="Company 1" /></a>
+              <a href="https://timesofindia.indiatimes.com/travel/delhi/momos-point/ps47677069.cms" target="blank">
+                <img className="featured-image cursor-pointer" width={250} src="./images/f02.png" alt="Company 2" /></a>
+              <a href="https://www.india.com/webstories/travel/articles/13-best-places-in-delhi-ncr-for-juiciest-momos-dolma-aunty-majnu-ka-tila-brown-sugar-best-momos-in-delhi-list-6327438/" target="blank">
+                <img className="featured-image cursor-pointer" width={80} src="./images/f03.png" alt="Company 3" /></a>
+              <a href="https://www.filmfare.com/features/sushants-food-secrets-5223.html" target="blank">
+                <img className="featured-image cursor-pointer" width={250} src="./images/f04.png" alt="Company 4" /></a>
               <img className="featured-image cursor-pointer" width={150} src="./images/f05.png" alt="Company 5" />
-              <a href="https://curlytales.com/5-best-places-to-eat-tandoori-momos-in-delhi/" target="blank"><img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" /></a>
+              <a href="https://curlytales.com/5-best-places-to-eat-tandoori-momos-in-delhi/" target="blank">
+                <img className="featured-image cursor-pointer" width={80} src="./images/f06.png" alt="Company 6" /></a>
               {/* <img className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6' src='./images/f6.png' alt='Company 6' /> */}
             </div>
           </marquee>
@@ -253,7 +263,7 @@ const MainPage = () => {
               <div className="flex items-center justify-center md:justify-stretch">
                 <img src="/images/white_phone.png" className="w-8 h-8" />
                 {/* make this p tag text center */}
-                <span className="text-lg ml-4">08851330111</span> 
+                <span className="text-lg ml-4">08851330111</span>
               </div>
               <hr className="mt-10 opacity-0" />
               <button onClick={() => setIsOpen(true)} className="order-button">CONTACT US</button>
@@ -313,7 +323,7 @@ const MainPage = () => {
                 duration={500}
                 className="lg:mx-9 md:mx-6"
               >
-                Home
+                <span className="text-[#F3EDE1]">Home</span>
               </ScrollLink>
 
               <ScrollLink
@@ -324,7 +334,18 @@ const MainPage = () => {
                 duration={500}
                 className="lg:mx-9 md:mx-6"
               >
-                About Us
+                <span className="text-[#F3EDE1]">About Us</span>
+              </ScrollLink>
+
+              <ScrollLink
+                to="menu" // the id of the element you want to scroll to
+                spy={true}
+                smooth={true}
+                offset={-70} // adjust the offset to the height of your header or any fixed elements
+                duration={500}
+                className="lg:mx-9 md:mx-6"
+              >
+                <span className="text-[#F3EDE1]">Menu</span>
               </ScrollLink>
 
               <ScrollLink
@@ -335,33 +356,30 @@ const MainPage = () => {
                 duration={500}
                 className="lg:mx-9 md:mx-6"
               >
-                Reviews
-              </ScrollLink>
-
-              <ScrollLink
-                to="blog" // the id of the element you want to scroll to
-                spy={true}
-                smooth={true}
-                offset={-70} // adjust the offset to the height of your header or any fixed elements
-                duration={500}
-                className="lg:mx-9 md:mx-6"
-              >
-                Blog
+                <span className="text-[#F3EDE1]">Reviews</span>
               </ScrollLink>
 
             </div>
             <div className="footer-contact text-center md:text-left">
               <div>
-                <h2 className="font-bold text-xl">Get In Touch</h2>
+                <h2 className="text-[#F3EDE1] font-bold text-xl">Get In Touch</h2>
+                <hr className="mt-4 opacity-0" />
                 <p>Question or Feedback?</p>
+                <hr className="mt-1 opacity-0" />
                 <p>We{`'d`} love to hear from you</p>
               </div>
               {/* Email and social media buttons */}
-              <img
+
+              <div className="mt-4 flex items-center justify-evenly border border-[#BDBDBD] rounded-full overflow-hidden">
+                <span className="pr-4 py-2 h-10">Email Address</span>
+                <img src="./images/emailicon.png" alt="submit" className="h-5 w-auto " />
+              </div>
+
+              {/* <img
                 className="mx-auto md:mx-0 mt-6"
                 src="./images/email_icon.png"
                 alt="Email Us"
-              />
+              /> */}
               <div className="social-media mx-auto md:mx-0 mt-6 flex items-center justify-center">
                 <img src="./images/instagram.png" alt="Instagram" />
                 <img src="./images/facebook.png" alt="Facebook" />
