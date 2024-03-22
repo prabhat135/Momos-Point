@@ -371,7 +371,7 @@ const MainPage = () => {
               {/* Email and social media buttons */}
 
               <div className="mt-4 flex items-center justify-evenly border border-[#BDBDBD] rounded-full overflow-hidden">
-                <span className="pr-4 py-2 h-10">Email Address</span>
+                <span className="pr-4 py-2 h-10 text-[#F3EDE1]">Email Address</span>
                 <img src="./images/emailicon.png" alt="submit" className="h-5 w-auto " />
               </div>
 
