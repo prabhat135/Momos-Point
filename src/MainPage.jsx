@@ -38,7 +38,7 @@ const MainPage = () => {
                 ORDER&nbsp;ON&nbsp;ZOMATO
               </button>
             </a>
-            <a href="https://www.swiggy.com/restaurants/momos-point-kamla-nagar-delhi-180373" target="blank">
+            <a href="https://www.swiggy.com/restaurants/momos-point-kamla-nagar-delhi-18037" target="blank">
               <button className="order-button orange w-full p-4">
                 ORDER&nbsp;ON&nbsp;SWIGGY
               </button>
